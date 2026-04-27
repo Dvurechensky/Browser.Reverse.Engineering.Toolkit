@@ -1,0 +1,17 @@
+{
+  "status": "ready",
+  "generator": "SiteReconstructor TypeScript SDK",
+  "output_dir": "exports/typescript-sdk",
+  "bundle": "exports/typescript-sdk.zip",
+  "files": [
+    "exports/typescript-sdk/package.json",
+    "exports/typescript-sdk/tsconfig.json",
+    "exports/typescript-sdk/README.md",
+    "exports/typescript-sdk/src/index.ts",
+    "exports/typescript-sdk/src/types.ts",
+    "exports/typescript-sdk/src/client.ts",
+    "exports/typescript-sdk/src/endpoints.ts"
+  ],
+  "endpoint_count": 69,
+  "warnings": []
+}

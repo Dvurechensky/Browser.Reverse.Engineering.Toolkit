@@ -1,0 +1,3876 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "SiteReconstructor Public API",
+    "version": "0.1.0",
+    "description": "Generated from authorized passive website capture evidence. Schemas are inferred drafts until validated."
+  },
+  "servers": [
+    {
+      "url": "https://vk.com",
+      "description": "frontend"
+    },
+    {
+      "url": "https://23112.ms.vk.com",
+      "description": "public"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "paths": {
+    "/al_feed_right_block.php": {
+      "post": {
+        "tags": [
+          "Config",
+          "Public"
+        ],
+        "summary": "POST /al_feed_right_block.php",
+        "description": "Inferred from passive capture. Auth hint: none observed. Confidence: 82%.",
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "langKeys": {
+                      "type": "object",
+                      "properties": {
+                        "global": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "local": {
+                          "type": "object",
+                          "properties": {
+                            "audio_action_dislike": {
+                              "type": "string"
+                            },
+                            "audio_action_sub_sheet_additional_loading": {
+                              "type": "string"
+                            },
+                            "audio_add_to_new_pl": {
+                              "type": "string"
+                            },
+                            "audio_add_to_playlist": {
+                              "type": "string"
+                            },
+                            "audio_alert_cancel_label_default": {
+                              "type": "string"
+                            },
+                            "audio_alert_confirm_label_default": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete_capital": {
+                              "type": "string"
+                            },
+                            "audio_claim_objection": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning_title": {
+                              "type": "string"
+                            },
+                            "audio_claimed_geo": {
+                              "type": "string"
+                            },
+                            "audio_claimed_replacement_available": {
+                              "type": "string"
+                            },
+                            "audio_copy_audio_link": {
+                              "type": "string"
+                            },
+                            "audio_legal_notice_line_foreign_agent": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_description": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_header": {
+                              "type": "string"
+                            },
+                            "audio_open_album": {
+                              "type": "string"
+                            },
+                            "audio_podcast_open_episode": {
+                              "type": "string"
+                            },
+                            "audio_replace_with_original": {
+                              "type": "string"
+                            },
+                            "audio_row_show_all_playlists": {
+                              "type": "string"
+                            },
+                            "audio_set_next_audio": {
+                              "type": "string"
+                            },
+                            "audio_share_audio": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_header": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_warning": {
+                              "type": "string"
+                            },
+                            "blank_too_many_recent_actions": {
+                              "type": "string"
+                            },
+                            "box_close": {
+                              "type": "string"
+                            },
+                            "box_send": {
+                              "type": "string"
+                            },
+                            "calls_cancel": {
+                              "type": "string"
+                            },
+                            "calls_delete": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_has_messages_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_in_contacts_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_nested_description": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_load_settings_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_success_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_allowed_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_empty_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_excluded_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_or_lists_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_loading_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_search_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_title": {
+                              "type": "string"
+                            },
+                            "calls_save": {
+                              "type": "string"
+                            },
+                            "captcha_cancel": {
+                              "type": "string"
+                            },
+                            "captcha_enter_code": {
+                              "type": "string"
+                            },
+                            "captcha_send": {
+                              "type": "string"
+                            },
+                            "global_action_confirmation": {
+                              "type": "string"
+                            },
+                            "global_apps": {
+                              "type": "string"
+                            },
+                            "global_audio_ad": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_btn": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_text": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_title": {
+                              "type": "string"
+                            },
+                            "global_back": {
+                              "type": "string"
+                            },
+                            "global_box_error_title": {
+                              "type": "string"
+                            },
+                            "global_box_title_back": {
+                              "type": "string"
+                            },
+                            "global_cancel": {
+                              "type": "string"
+                            },
+                            "global_captcha_input_here": {
+                              "type": "string"
+                            },
+                            "global_chats": {
+                              "type": "string"
+                            },
+                            "global_close": {
+                              "type": "string"
+                            },
+                            "global_communities": {
+                              "type": "string"
+                            },
+                            "global_date": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_l": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_pre_free": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_delete": {
+                              "type": "string"
+                            },
+                            "global_error": {
+                              "type": "string"
+                            },
+                            "global_error_occured": {
+                              "type": "string"
+                            },
+                            "global_friends": {
+                              "type": "string"
+                            },
+                            "global_head_logout": {
+                              "type": "string"
+                            },
+                            "global_hours_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_just_now": {
+                              "type": "string"
+                            },
+                            "global_long_weeks": {
+                              "type": "string"
+                            },
+                            "global_mins_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_money_amount_rub": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_news_search_results": {
+                              "type": "string"
+                            },
+                            "global_recaptcha_title": {
+                              "type": "string"
+                            },
+                            "global_secs_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_short_date": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_short_date_time": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langVersion": {
+                      "type": "string"
+                    },
+                    "loaderVersion": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "static": {
+                      "type": "string"
+                    },
+                    "statsMeta": {
+                      "type": "object",
+                      "properties": {
+                        "hash": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "number"
+                        },
+                        "platform": {
+                          "type": "string"
+                        },
+                        "reloadVersion": {
+                          "type": "number"
+                        },
+                        "st": {
+                          "type": "boolean"
+                        },
+                        "time": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "vkEnv": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "langKeys": {
+                    "global": [
+                      "unknown"
+                    ],
+                    "local": {
+                      "audio_action_dislike": "string",
+                      "audio_action_sub_sheet_additional_loading": "string",
+                      "audio_add_to_new_pl": "string",
+                      "audio_add_to_playlist": "string",
+                      "audio_alert_cancel_label_default": "string",
+                      "audio_alert_confirm_label_default": "string",
+                      "audio_claim_delete": "string",
+                      "audio_claim_delete_capital": "string",
+                      "audio_claim_objection": "string",
+                      "audio_claim_warning": "string",
+                      "audio_claim_warning_title": "string",
+                      "audio_claimed_geo": "string",
+                      "audio_claimed_replacement_available": "string",
+                      "audio_copy_audio_link": "string",
+                      "audio_legal_notice_line_foreign_agent": "string",
+                      "audio_music_playlist_crash_placeholder_description": "string",
+                      "audio_music_playlist_crash_placeholder_header": "string",
+                      "audio_open_album": "string",
+                      "audio_podcast_open_episode": "string",
+                      "audio_replace_with_original": "string"
+                    }
+                  },
+                  "langVersion": "string",
+                  "loaderVersion": "string",
+                  "payload": [
+                    1
+                  ],
+                  "static": "string",
+                  "statsMeta": {
+                    "hash": "string",
+                    "id": 1,
+                    "platform": "string",
+                    "reloadVersion": 1,
+                    "st": true,
+                    "time": 1
+                  },
+                  "vkEnv": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "public",
+          "category": "config",
+          "auth_hint": "none observed",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/al_feed_right_block.php"
+        }
+      }
+    },
+    "/": {
+      "head": {
+        "tags": [
+          "Other",
+          "Public"
+        ],
+        "summary": "HEAD /",
+        "description": "Inferred from passive capture. Auth hint: none observed. Confidence: 68%.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {}
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "public",
+          "category": "other",
+          "auth_hint": "none observed",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/"
+        }
+      }
+    },
+    "/al_groups.php": {
+      "post": {
+        "tags": [
+          "Other",
+          "Public"
+        ],
+        "summary": "POST /al_groups.php",
+        "description": "Inferred from passive capture. Auth hint: none observed. Confidence: 98%.",
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "langKeys": {
+                      "type": "object",
+                      "properties": {
+                        "global": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "local": {
+                          "type": "object",
+                          "properties": {
+                            "audio_action_dislike": {
+                              "type": "string"
+                            },
+                            "audio_action_sub_sheet_additional_loading": {
+                              "type": "string"
+                            },
+                            "audio_add_to_audio": {
+                              "type": "string"
+                            },
+                            "audio_add_to_new_pl": {
+                              "type": "string"
+                            },
+                            "audio_add_to_playlist": {
+                              "type": "string"
+                            },
+                            "audio_alert_cancel_label_default": {
+                              "type": "string"
+                            },
+                            "audio_alert_confirm_label_default": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete_capital": {
+                              "type": "string"
+                            },
+                            "audio_claim_objection": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning_title": {
+                              "type": "string"
+                            },
+                            "audio_claimed_geo": {
+                              "type": "string"
+                            },
+                            "audio_claimed_replacement_available": {
+                              "type": "string"
+                            },
+                            "audio_copy_audio_link": {
+                              "type": "string"
+                            },
+                            "audio_legal_notice_line_foreign_agent": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_description": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_header": {
+                              "type": "string"
+                            },
+                            "audio_open_album": {
+                              "type": "string"
+                            },
+                            "audio_podcast_open_episode": {
+                              "type": "string"
+                            },
+                            "audio_replace_with_original": {
+                              "type": "string"
+                            },
+                            "audio_row_show_all_playlists": {
+                              "type": "string"
+                            },
+                            "audio_set_next_audio": {
+                              "type": "string"
+                            },
+                            "audio_share_audio": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_header": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_warning": {
+                              "type": "string"
+                            },
+                            "blank_too_many_recent_actions": {
+                              "type": "string"
+                            },
+                            "box_close": {
+                              "type": "string"
+                            },
+                            "box_send": {
+                              "type": "string"
+                            },
+                            "calls_cancel": {
+                              "type": "string"
+                            },
+                            "calls_delete": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_has_messages_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_in_contacts_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_nested_description": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_load_settings_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_success_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_allowed_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_empty_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_excluded_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_or_lists_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_loading_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_search_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_title": {
+                              "type": "string"
+                            },
+                            "calls_save": {
+                              "type": "string"
+                            },
+                            "captcha_cancel": {
+                              "type": "string"
+                            },
+                            "captcha_enter_code": {
+                              "type": "string"
+                            },
+                            "captcha_send": {
+                              "type": "string"
+                            },
+                            "global_action_confirmation": {
+                              "type": "string"
+                            },
+                            "global_apps": {
+                              "type": "string"
+                            },
+                            "global_audio_ad": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_btn": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_text": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_title": {
+                              "type": "string"
+                            },
+                            "global_back": {
+                              "type": "string"
+                            },
+                            "global_box_error_title": {
+                              "type": "string"
+                            },
+                            "global_box_title_back": {
+                              "type": "string"
+                            },
+                            "global_cancel": {
+                              "type": "string"
+                            },
+                            "global_captcha_input_here": {
+                              "type": "string"
+                            },
+                            "global_chats": {
+                              "type": "string"
+                            },
+                            "global_close": {
+                              "type": "string"
+                            },
+                            "global_communities": {
+                              "type": "string"
+                            },
+                            "global_date": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_l": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_pre_free": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_delete": {
+                              "type": "string"
+                            },
+                            "global_delete_audio": {
+                              "type": "string"
+                            },
+                            "global_error": {
+                              "type": "string"
+                            },
+                            "global_error_occured": {
+                              "type": "string"
+                            },
+                            "global_friends": {
+                              "type": "string"
+                            },
+                            "global_head_logout": {
+                              "type": "string"
+                            },
+                            "global_hours_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_just_now": {
+                              "type": "string"
+                            },
+                            "global_long_weeks": {
+                              "type": "string"
+                            },
+                            "global_mins_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_money_amount_rub": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_news_search_results": {
+                              "type": "string"
+                            },
+                            "groups_community_onboarding_address_error": {
+                              "type": "string"
+                            },
+                            "groups_community_onboarding_confirm_continue": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langVersion": {
+                      "type": "string"
+                    },
+                    "loaderVersion": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "static": {
+                      "type": "string"
+                    },
+                    "statsMeta": {
+                      "type": "object",
+                      "properties": {
+                        "hash": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "number"
+                        },
+                        "platform": {
+                          "type": "string"
+                        },
+                        "reloadVersion": {
+                          "type": "number"
+                        },
+                        "st": {
+                          "type": "boolean"
+                        },
+                        "time": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "vkEnv": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "langKeys": {
+                    "global": [
+                      "unknown"
+                    ],
+                    "local": {
+                      "audio_action_dislike": "string",
+                      "audio_action_sub_sheet_additional_loading": "string",
+                      "audio_add_to_audio": "string",
+                      "audio_add_to_new_pl": "string",
+                      "audio_add_to_playlist": "string",
+                      "audio_alert_cancel_label_default": "string",
+                      "audio_alert_confirm_label_default": "string",
+                      "audio_claim_delete": "string",
+                      "audio_claim_delete_capital": "string",
+                      "audio_claim_objection": "string",
+                      "audio_claim_warning": "string",
+                      "audio_claim_warning_title": "string",
+                      "audio_claimed_geo": "string",
+                      "audio_claimed_replacement_available": "string",
+                      "audio_copy_audio_link": "string",
+                      "audio_legal_notice_line_foreign_agent": "string",
+                      "audio_music_playlist_crash_placeholder_description": "string",
+                      "audio_music_playlist_crash_placeholder_header": "string",
+                      "audio_open_album": "string",
+                      "audio_podcast_open_episode": "string"
+                    }
+                  },
+                  "langVersion": "string",
+                  "loaderVersion": "string",
+                  "payload": [
+                    1
+                  ],
+                  "static": "string",
+                  "statsMeta": {
+                    "hash": "string",
+                    "id": 1,
+                    "platform": "string",
+                    "reloadVersion": 1,
+                    "st": true,
+                    "time": 1
+                  },
+                  "vkEnv": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.98,
+          "server_kind": "public",
+          "category": "other",
+          "auth_hint": "none observed",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/al_groups.php"
+        }
+      }
+    },
+    "/al_market.php": {
+      "post": {
+        "tags": [
+          "Other",
+          "Public"
+        ],
+        "summary": "POST /al_market.php",
+        "description": "Inferred from passive capture. Auth hint: cookie/session. Confidence: 82%.",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer {{access_token}}"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "env": {
+                      "type": "object",
+                      "properties": {
+                        "pe": {
+                          "type": "object",
+                          "properties": {
+                            "ads_legacy_routes": {
+                              "type": "number"
+                            },
+                            "ads_market_autopromotion_bookmarks_stats": {
+                              "type": "number"
+                            },
+                            "apps_show_app_slides_sheet_no_extra_closes": {
+                              "type": "number"
+                            },
+                            "audio_recoms_onboarding_entry_points": {
+                              "type": "number"
+                            },
+                            "audio_special_project_web": {
+                              "type": "number"
+                            },
+                            "audio_studio_ads_block_enabled": {
+                              "type": "number"
+                            },
+                            "avatar_component_refactor_web": {
+                              "type": "number"
+                            },
+                            "avoid_multiple_init": {
+                              "type": "number"
+                            },
+                            "await_spa_module": {
+                              "type": "number"
+                            },
+                            "beauty_wizard_redesign": {
+                              "type": "number"
+                            },
+                            "beauty_wizard_spa": {
+                              "type": "number"
+                            },
+                            "bugs_tariff_interface": {
+                              "type": "number"
+                            },
+                            "challenge_ajax_requests": {
+                              "type": "number"
+                            },
+                            "claim_fz149": {
+                              "type": "number"
+                            },
+                            "clips_fix_autoplay_legacy": {
+                              "type": "number"
+                            },
+                            "clips_web_spa_backend": {
+                              "type": "number"
+                            },
+                            "collect_ttlb": {
+                              "type": "number"
+                            },
+                            "community_authors_onboarding": {
+                              "type": "number"
+                            },
+                            "core_spa_blocking": {
+                              "type": "number"
+                            },
+                            "devadmin_splash_screen_go_uploader": {
+                              "type": "number"
+                            },
+                            "disable_push_equal_history_location": {
+                              "type": "number"
+                            },
+                            "enable_feature_toggles": {
+                              "type": "number"
+                            },
+                            "extended_static_loading_errors": {
+                              "type": "number"
+                            },
+                            "fav_dialog_with_yourself": {
+                              "type": "number"
+                            },
+                            "feed_action_button_compact_style_fix": {
+                              "type": "number"
+                            },
+                            "feed_ads_cta_secondary_link_support_web": {
+                              "type": "number"
+                            },
+                            "feed_attachemnts_fix_aspect_ratio": {
+                              "type": "number"
+                            },
+                            "feed_csrf_hash_support_web": {
+                              "type": "string"
+                            },
+                            "feed_filter_photos_sizes_wide_enough": {
+                              "type": "number"
+                            },
+                            "feed_fix_cirillic_ad_host_name": {
+                              "type": "number"
+                            },
+                            "feed_fix_empty_apply_options": {
+                              "type": "number"
+                            },
+                            "feed_fix_get_owner_console_error": {
+                              "type": "number"
+                            },
+                            "feed_fix_render_new_post": {
+                              "type": "number"
+                            },
+                            "feed_grid_photo_padding_fix": {
+                              "type": "number"
+                            },
+                            "feed_open_audio_stats_for_react": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags_in_grid": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags_link_wrapper": {
+                              "type": "number"
+                            },
+                            "feed_post_action_button_with_underline": {
+                              "type": "number"
+                            },
+                            "feed_post_text_persist_lines_count_on_hide": {
+                              "type": "number"
+                            },
+                            "feed_post_video_in_carousel_controls_events_block": {
+                              "type": "number"
+                            },
+                            "feed_post_video_layer_close_wkview_restore": {
+                              "type": "number"
+                            },
+                            "feed_posting_action_button_switch_fix": {
+                              "type": "number"
+                            },
+                            "feed_posting_post_preview_replace_emoji_enabled": {
+                              "type": "number"
+                            },
+                            "feed_redesign2024_new_logic_for_video_autoplay_web": {
+                              "type": "number"
+                            },
+                            "feed_redesign_2024_extract_links_from_promo_post_web": {
+                              "type": "number"
+                            },
+                            "feed_redesign_ad_data_secondary": {
+                              "type": "number"
+                            },
+                            "feed_redesign_fix_hashtag_mention": {
+                              "type": "number"
+                            },
+                            "feed_redesign_fix_mention": {
+                              "type": "number"
+                            },
+                            "feed_redesign_v3_photoview_scroll_fix": {
+                              "type": "number"
+                            },
+                            "feed_redesign_wrap_away_chip_links": {
+                              "type": "number"
+                            },
+                            "feed_remove_dispatch_global_resize": {
+                              "type": "number"
+                            },
+                            "feed_section_navigation_fix": {
+                              "type": "number"
+                            },
+                            "feed_spa_fix_get_poll_code": {
+                              "type": "number"
+                            },
+                            "feed_spa_layer_open_fix": {
+                              "type": "number"
+                            },
+                            "feed_spa_post_modal_singleton": {
+                              "type": "number"
+                            },
+                            "feed_spa_scroll_to_index": {
+                              "type": "number"
+                            },
+                            "feed_viewport_dom_post": {
+                              "type": "number"
+                            },
+                            "feed_wall_use_full_post_height_analytics_web": {
+                              "type": "number"
+                            },
+                            "fix_anonymous_reply": {
+                              "type": "number"
+                            },
+                            "fix_blocks_forcing_for_auto_test": {
+                              "type": "number"
+                            },
+                            "fix_cyrillic_in_external_plain_urls": {
+                              "type": "number"
+                            },
+                            "fix_eco_plate_navigation": {
+                              "type": "number"
+                            },
+                            "fix_frame_transport_xss": {
+                              "type": "number"
+                            },
+                            "fix_jobs_link": {
+                              "type": "number"
+                            },
+                            "flush_async": {
+                              "type": "number"
+                            },
+                            "force_act_in_get_params": {
+                              "type": "number"
+                            },
+                            "force_check_vkvideo_full_hostname_domains": {
+                              "type": "number"
+                            },
+                            "force_send_user_info": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_all_games_page": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_all_tags_page": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_search": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_tag_page": {
+                              "type": "number"
+                            },
+                            "games_send_track_visitor_activity": {
+                              "type": "number"
+                            },
+                            "global_variable_wrapper": {
+                              "type": "number"
+                            },
+                            "group_web_spa_backend": {
+                              "type": "number"
+                            },
+                            "groups_donut_icons_redesigned": {
+                              "type": "number"
+                            },
+                            "hide_notifier_errors": {
+                              "type": "number"
+                            },
+                            "im_clocks_fix": {
+                              "type": "number"
+                            },
+                            "inline_attaches_icons": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "toggles": {
+                          "type": "object",
+                          "properties": {
+                            "clips_use_features_player_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "clips_web_convert_from_post": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_donut_for_user": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_main_tab": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_market_settings_vkpay_form": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_profile_web_tabs_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "com_settings_managers": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_settings_requests": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_settings_subscribers": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_forbid_anon_post_layer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_get_feed": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_get_feed_secondary": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_image_auto_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_legacy_attach_wrapper_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_legacy_page_seen_ads_stat": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_nine_grid_update": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_old_share_modal_stats": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_photo_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_photo_edit_only_upload": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_polls_spa_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_post_menu_on_hover_delay": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_carousel_sort": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_crop_for_view": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_music_snippet": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_new_draft": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_new_draft_publish": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_photo_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_prefetch": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_pv_single_photo_req": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_spa_reactions_modal_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_spa_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_story_block_error": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_video_autoplay_modal_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sa_ads_closing_banner": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sa_ads_interstitial_on_load": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sccm_com_new_posting_feed_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "sccm_com_posting_button_order": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "sccm_vk_tickets_posting_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_all_to_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_statuses_web_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_top_search_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "smb_tgb_new_logic_received_ads": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "st_articles_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "st_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "st_web_spa_stories_viewer_2": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vas_gift_modal_spa": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_gift_modal_sticky_footer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_limited_gifts_vkcom": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_stickers_my_stickers_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_web_new_gifts_send": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_ad_paid_subscription": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_add_playlist_search": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_clip_analytics_enabled": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_clip_upload_with_story": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_dashboard_clip_bulk_edit": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_dashboard_onboarding_ab": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_delay_datafix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_fix_thumb": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_privacy_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_sticky_footer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_clip_unpin": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_short_video_timeline": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_thumb_changing": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_thumb_removing": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_historical_dashboard": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_edit_modal_bugfixes": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_share_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_video_add_to_channel": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_video_edit_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_playlist_season_route": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_recom_thematic_banners": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_short_video_edit_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_use_uv_player_on_vkcom": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_use_uv_player_on_vkvideo": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_web_spa_for_kids_page": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_web_spa_mov_and_ser_page": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vkm_channels_global_search": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vkm_clip_fs_pagination_off": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vkm_clip_to_channel_button": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langKeys": {
+                      "type": "object",
+                      "properties": {
+                        "global": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "local": {
+                          "type": "object",
+                          "properties": {
+                            "audio_action_dislike": {
+                              "type": "string"
+                            },
+                            "audio_action_sub_sheet_additional_loading": {
+                              "type": "string"
+                            },
+                            "audio_add_to_audio": {
+                              "type": "string"
+                            },
+                            "audio_add_to_new_pl": {
+                              "type": "string"
+                            },
+                            "audio_add_to_playlist": {
+                              "type": "string"
+                            },
+                            "audio_alert_cancel_label_default": {
+                              "type": "string"
+                            },
+                            "audio_alert_confirm_label_default": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete_capital": {
+                              "type": "string"
+                            },
+                            "audio_claim_objection": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning_title": {
+                              "type": "string"
+                            },
+                            "audio_claimed_geo": {
+                              "type": "string"
+                            },
+                            "audio_claimed_replacement_available": {
+                              "type": "string"
+                            },
+                            "audio_copy_audio_link": {
+                              "type": "string"
+                            },
+                            "audio_legal_notice_line_foreign_agent": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_description": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_header": {
+                              "type": "string"
+                            },
+                            "audio_open_album": {
+                              "type": "string"
+                            },
+                            "audio_podcast_open_episode": {
+                              "type": "string"
+                            },
+                            "audio_replace_with_original": {
+                              "type": "string"
+                            },
+                            "audio_row_show_all_playlists": {
+                              "type": "string"
+                            },
+                            "audio_set_next_audio": {
+                              "type": "string"
+                            },
+                            "audio_share_audio": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_header": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_warning": {
+                              "type": "string"
+                            },
+                            "blank_too_many_recent_actions": {
+                              "type": "string"
+                            },
+                            "box_close": {
+                              "type": "string"
+                            },
+                            "box_send": {
+                              "type": "string"
+                            },
+                            "calls_cancel": {
+                              "type": "string"
+                            },
+                            "calls_delete": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_has_messages_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_in_contacts_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_nested_description": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_load_settings_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_success_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_allowed_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_empty_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_excluded_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_or_lists_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_loading_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_search_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_title": {
+                              "type": "string"
+                            },
+                            "calls_save": {
+                              "type": "string"
+                            },
+                            "captcha_cancel": {
+                              "type": "string"
+                            },
+                            "captcha_enter_code": {
+                              "type": "string"
+                            },
+                            "captcha_send": {
+                              "type": "string"
+                            },
+                            "global_action_confirmation": {
+                              "type": "string"
+                            },
+                            "global_apps": {
+                              "type": "string"
+                            },
+                            "global_audio_ad": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_btn": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_text": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_title": {
+                              "type": "string"
+                            },
+                            "global_back": {
+                              "type": "string"
+                            },
+                            "global_box_error_title": {
+                              "type": "string"
+                            },
+                            "global_box_title_back": {
+                              "type": "string"
+                            },
+                            "global_cancel": {
+                              "type": "string"
+                            },
+                            "global_captcha_input_here": {
+                              "type": "string"
+                            },
+                            "global_chats": {
+                              "type": "string"
+                            },
+                            "global_close": {
+                              "type": "string"
+                            },
+                            "global_communities": {
+                              "type": "string"
+                            },
+                            "global_date": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_l": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_pre_free": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_delete": {
+                              "type": "string"
+                            },
+                            "global_delete_audio": {
+                              "type": "string"
+                            },
+                            "global_error": {
+                              "type": "string"
+                            },
+                            "global_error_occured": {
+                              "type": "string"
+                            },
+                            "global_friends": {
+                              "type": "string"
+                            },
+                            "global_head_logout": {
+                              "type": "string"
+                            },
+                            "global_hours_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_just_now": {
+                              "type": "string"
+                            },
+                            "global_long_weeks": {
+                              "type": "string"
+                            },
+                            "global_mins_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_money_amount_rub": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_news_search_results": {
+                              "type": "string"
+                            },
+                            "global_recaptcha_title": {
+                              "type": "string"
+                            },
+                            "global_secs_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langVersion": {
+                      "type": "string"
+                    },
+                    "loaderVersion": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "static": {
+                      "type": "string"
+                    },
+                    "statsMeta": {
+                      "type": "object",
+                      "properties": {
+                        "hash": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "number"
+                        },
+                        "platform": {
+                          "type": "string"
+                        },
+                        "reloadVersion": {
+                          "type": "number"
+                        },
+                        "st": {
+                          "type": "boolean"
+                        },
+                        "time": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "templates": {
+                      "type": "object",
+                      "properties": {
+                        "_": {
+                          "type": "string"
+                        },
+                        "stickers_sticker_url": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "vkEnv": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "env": {
+                    "pe": {
+                      "ads_legacy_routes": 1,
+                      "ads_market_autopromotion_bookmarks_stats": 1,
+                      "apps_show_app_slides_sheet_no_extra_closes": 1,
+                      "audio_recoms_onboarding_entry_points": 1,
+                      "audio_special_project_web": 1,
+                      "audio_studio_ads_block_enabled": 1,
+                      "avatar_component_refactor_web": 1,
+                      "avoid_multiple_init": 1,
+                      "await_spa_module": 1,
+                      "beauty_wizard_redesign": 1,
+                      "beauty_wizard_spa": 1,
+                      "bugs_tariff_interface": 1,
+                      "challenge_ajax_requests": 1,
+                      "claim_fz149": 1,
+                      "clips_fix_autoplay_legacy": 1,
+                      "clips_web_spa_backend": 1,
+                      "collect_ttlb": 1,
+                      "community_authors_onboarding": 1,
+                      "core_spa_blocking": 1,
+                      "devadmin_splash_screen_go_uploader": 1
+                    },
+                    "toggles": {
+                      "clips_use_features_player_web": {
+                        "abGroupId": "null"
+                      },
+                      "clips_web_convert_from_post": {
+                        "abGroupId": "null"
+                      },
+                      "com_donut_for_user": {
+                        "abGroupId": "null"
+                      },
+                      "com_main_tab": {
+                        "abGroupId": "null"
+                      },
+                      "com_market_settings_vkpay_form": {
+                        "abGroupId": "null"
+                      },
+                      "com_profile_web_tabs_mobx": {
+                        "abGroupId": 1
+                      },
+                      "com_settings_managers": {
+                        "abGroupId": "null"
+                      },
+                      "com_settings_requests": {
+                        "abGroupId": "null"
+                      },
+                      "com_settings_subscribers": {
+                        "abGroupId": "null"
+                      },
+                      "feed_audience_research": {
+                        "abGroupId": "null"
+                      },
+                      "feed_forbid_anon_post_layer": {
+                        "abGroupId": "null"
+                      },
+                      "feed_get_feed": {
+                        "abGroupId": "null"
+                      },
+                      "feed_get_feed_secondary": {
+                        "abGroupId": "null"
+                      },
+                      "feed_image_auto_crop": {
+                        "abGroupId": "null"
+                      },
+                      "feed_legacy_attach_wrapper_fix": {
+                        "abGroupId": "null"
+                      },
+                      "feed_legacy_page_seen_ads_stat": {
+                        "abGroupId": "null"
+                      },
+                      "feed_nine_grid_update": {
+                        "abGroupId": "null"
+                      },
+                      "feed_old_share_modal_stats": {
+                        "abGroupId": "null"
+                      },
+                      "feed_photo_crop": {
+                        "abGroupId": "null"
+                      },
+                      "feed_photo_edit_only_upload": {
+                        "abGroupId": "null"
+                      }
+                    }
+                  },
+                  "langKeys": {
+                    "global": [
+                      "unknown"
+                    ],
+                    "local": {
+                      "audio_action_dislike": "string",
+                      "audio_action_sub_sheet_additional_loading": "string",
+                      "audio_add_to_audio": "string",
+                      "audio_add_to_new_pl": "string",
+                      "audio_add_to_playlist": "string",
+                      "audio_alert_cancel_label_default": "string",
+                      "audio_alert_confirm_label_default": "string",
+                      "audio_claim_delete": "string",
+                      "audio_claim_delete_capital": "string",
+                      "audio_claim_objection": "string",
+                      "audio_claim_warning": "string",
+                      "audio_claim_warning_title": "string",
+                      "audio_claimed_geo": "string",
+                      "audio_claimed_replacement_available": "string",
+                      "audio_copy_audio_link": "string",
+                      "audio_legal_notice_line_foreign_agent": "string",
+                      "audio_music_playlist_crash_placeholder_description": "string",
+                      "audio_music_playlist_crash_placeholder_header": "string",
+                      "audio_open_album": "string",
+                      "audio_podcast_open_episode": "string"
+                    }
+                  },
+                  "langVersion": "string",
+                  "loaderVersion": "string",
+                  "payload": [
+                    1
+                  ],
+                  "static": "string",
+                  "statsMeta": {
+                    "hash": "string",
+                    "id": 1,
+                    "platform": "string",
+                    "reloadVersion": 1,
+                    "st": true,
+                    "time": 1
+                  },
+                  "templates": {
+                    "_": "string",
+                    "stickers_sticker_url": "string"
+                  },
+                  "vkEnv": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "public",
+          "category": "other",
+          "auth_hint": "cookie/session",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/al_market.php"
+        }
+      }
+    },
+    "/al_profile.php": {
+      "post": {
+        "tags": [
+          "Other",
+          "Public"
+        ],
+        "summary": "POST /al_profile.php",
+        "description": "Inferred from passive capture. Auth hint: none observed. Confidence: 83%.",
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "langVersion": {
+                      "type": "string"
+                    },
+                    "loaderVersion": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "statsMeta": {
+                      "type": "object",
+                      "properties": {
+                        "hash": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "number"
+                        },
+                        "platform": {
+                          "type": "string"
+                        },
+                        "reloadVersion": {
+                          "type": "number"
+                        },
+                        "st": {
+                          "type": "boolean"
+                        },
+                        "time": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "vkEnv": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "langVersion": "string",
+                  "loaderVersion": "string",
+                  "payload": [
+                    1
+                  ],
+                  "statsMeta": {
+                    "hash": "string",
+                    "id": 1,
+                    "platform": "string",
+                    "reloadVersion": 1,
+                    "st": true,
+                    "time": 1
+                  },
+                  "vkEnv": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "public",
+          "category": "other",
+          "auth_hint": "none observed",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/al_profile.php"
+        }
+      }
+    },
+    "/al_tickets.php": {
+      "post": {
+        "tags": [
+          "Other",
+          "Public"
+        ],
+        "summary": "POST /al_tickets.php",
+        "description": "Inferred from passive capture. Auth hint: cookie/session. Confidence: 82%.",
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer {{access_token}}"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "env": {
+                      "type": "object",
+                      "properties": {
+                        "pe": {
+                          "type": "object",
+                          "properties": {
+                            "ads_legacy_routes": {
+                              "type": "number"
+                            },
+                            "ads_market_autopromotion_bookmarks_stats": {
+                              "type": "number"
+                            },
+                            "apps_show_app_slides_sheet_no_extra_closes": {
+                              "type": "number"
+                            },
+                            "audio_recoms_onboarding_entry_points": {
+                              "type": "number"
+                            },
+                            "audio_special_project_web": {
+                              "type": "number"
+                            },
+                            "audio_studio_ads_block_enabled": {
+                              "type": "number"
+                            },
+                            "avatar_component_refactor_web": {
+                              "type": "number"
+                            },
+                            "avoid_multiple_init": {
+                              "type": "number"
+                            },
+                            "await_spa_module": {
+                              "type": "number"
+                            },
+                            "beauty_wizard_redesign": {
+                              "type": "number"
+                            },
+                            "beauty_wizard_spa": {
+                              "type": "number"
+                            },
+                            "bugs_tariff_interface": {
+                              "type": "number"
+                            },
+                            "challenge_ajax_requests": {
+                              "type": "number"
+                            },
+                            "claim_fz149": {
+                              "type": "number"
+                            },
+                            "clips_fix_autoplay_legacy": {
+                              "type": "number"
+                            },
+                            "clips_web_spa_backend": {
+                              "type": "number"
+                            },
+                            "collect_ttlb": {
+                              "type": "number"
+                            },
+                            "community_authors_onboarding": {
+                              "type": "number"
+                            },
+                            "devadmin_splash_screen_go_uploader": {
+                              "type": "number"
+                            },
+                            "disable_push_equal_history_location": {
+                              "type": "number"
+                            },
+                            "enable_feature_toggles": {
+                              "type": "number"
+                            },
+                            "extended_static_loading_errors": {
+                              "type": "number"
+                            },
+                            "fav_dialog_with_yourself": {
+                              "type": "number"
+                            },
+                            "feed_action_button_compact_style_fix": {
+                              "type": "number"
+                            },
+                            "feed_ads_cta_secondary_link_support_web": {
+                              "type": "number"
+                            },
+                            "feed_attachemnts_fix_aspect_ratio": {
+                              "type": "number"
+                            },
+                            "feed_csrf_hash_support_web": {
+                              "type": "string"
+                            },
+                            "feed_filter_photos_sizes_wide_enough": {
+                              "type": "number"
+                            },
+                            "feed_fix_cirillic_ad_host_name": {
+                              "type": "number"
+                            },
+                            "feed_fix_empty_apply_options": {
+                              "type": "number"
+                            },
+                            "feed_fix_get_owner_console_error": {
+                              "type": "number"
+                            },
+                            "feed_fix_render_new_post": {
+                              "type": "number"
+                            },
+                            "feed_grid_photo_padding_fix": {
+                              "type": "number"
+                            },
+                            "feed_open_audio_stats_for_react": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags_in_grid": {
+                              "type": "number"
+                            },
+                            "feed_photo_market_tags_link_wrapper": {
+                              "type": "number"
+                            },
+                            "feed_post_action_button_with_underline": {
+                              "type": "number"
+                            },
+                            "feed_post_text_persist_lines_count_on_hide": {
+                              "type": "number"
+                            },
+                            "feed_post_video_in_carousel_controls_events_block": {
+                              "type": "number"
+                            },
+                            "feed_post_video_layer_close_wkview_restore": {
+                              "type": "number"
+                            },
+                            "feed_posting_action_button_switch_fix": {
+                              "type": "number"
+                            },
+                            "feed_posting_post_preview_replace_emoji_enabled": {
+                              "type": "number"
+                            },
+                            "feed_redesign2024_new_logic_for_video_autoplay_web": {
+                              "type": "number"
+                            },
+                            "feed_redesign_2024_extract_links_from_promo_post_web": {
+                              "type": "number"
+                            },
+                            "feed_redesign_ad_data_secondary": {
+                              "type": "number"
+                            },
+                            "feed_redesign_fix_hashtag_mention": {
+                              "type": "number"
+                            },
+                            "feed_redesign_fix_mention": {
+                              "type": "number"
+                            },
+                            "feed_redesign_v3_photoview_scroll_fix": {
+                              "type": "number"
+                            },
+                            "feed_redesign_wrap_away_chip_links": {
+                              "type": "number"
+                            },
+                            "feed_remove_dispatch_global_resize": {
+                              "type": "number"
+                            },
+                            "feed_section_navigation_fix": {
+                              "type": "number"
+                            },
+                            "feed_spa_fix_get_poll_code": {
+                              "type": "number"
+                            },
+                            "feed_spa_layer_open_fix": {
+                              "type": "number"
+                            },
+                            "feed_spa_post_modal_singleton": {
+                              "type": "number"
+                            },
+                            "feed_spa_scroll_to_index": {
+                              "type": "number"
+                            },
+                            "feed_viewport_dom_post": {
+                              "type": "number"
+                            },
+                            "feed_wall_use_full_post_height_analytics_web": {
+                              "type": "number"
+                            },
+                            "fix_anonymous_reply": {
+                              "type": "number"
+                            },
+                            "fix_blocks_forcing_for_auto_test": {
+                              "type": "number"
+                            },
+                            "fix_cyrillic_in_external_plain_urls": {
+                              "type": "number"
+                            },
+                            "fix_eco_plate_navigation": {
+                              "type": "number"
+                            },
+                            "fix_frame_transport_xss": {
+                              "type": "number"
+                            },
+                            "fix_jobs_link": {
+                              "type": "number"
+                            },
+                            "flush_async": {
+                              "type": "number"
+                            },
+                            "force_act_in_get_params": {
+                              "type": "number"
+                            },
+                            "force_check_vkvideo_full_hostname_domains": {
+                              "type": "number"
+                            },
+                            "force_send_user_info": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_all_games_page": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_all_tags_page": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_search": {
+                              "type": "number"
+                            },
+                            "games_catalog_spa_web_tag_page": {
+                              "type": "number"
+                            },
+                            "games_send_track_visitor_activity": {
+                              "type": "number"
+                            },
+                            "global_variable_wrapper": {
+                              "type": "number"
+                            },
+                            "group_web_spa_backend": {
+                              "type": "number"
+                            },
+                            "groups_donut_icons_redesigned": {
+                              "type": "number"
+                            },
+                            "hide_notifier_errors": {
+                              "type": "number"
+                            },
+                            "im_clocks_fix": {
+                              "type": "number"
+                            },
+                            "inline_attaches_icons": {
+                              "type": "number"
+                            },
+                            "langs_entrypoints_cache": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "toggles": {
+                          "type": "object",
+                          "properties": {
+                            "clips_use_features_player_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "clips_web_convert_from_post": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_donut_for_user": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_main_tab": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_market_settings_vkpay_form": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_profile_web_tabs_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "com_settings_managers": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_settings_requests": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "com_settings_subscribers": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_forbid_anon_post_layer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_get_feed": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_get_feed_secondary": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_image_auto_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_legacy_attach_wrapper_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_legacy_page_seen_ads_stat": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_nine_grid_update": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_old_share_modal_stats": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_photo_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_photo_edit_only_upload": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_polls_spa_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_post_menu_on_hover_delay": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_carousel_sort": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_crop_for_view": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_music_snippet": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_new_draft": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_new_draft_publish": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_posting_photo_crop": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_prefetch": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_pv_single_photo_req": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_spa_reactions_modal_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_spa_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_story_block_error": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "feed_video_autoplay_modal_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sa_ads_closing_banner": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sa_ads_interstitial_on_load": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "sccm_com_new_posting_feed_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "sccm_com_posting_button_order": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "sccm_vk_tickets_posting_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_all_to_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_statuses_web_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "search_top_search_mobx": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "smb_tgb_new_logic_received_ads": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "st_articles_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "st_audience_research": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "st_web_spa_stories_viewer_2": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vas_gift_modal_spa": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_gift_modal_sticky_footer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_limited_gifts_vkcom": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_stickers_my_stickers_web": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vas_web_new_gifts_send": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_ad_paid_subscription": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_add_playlist_search": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_clip_analytics_enabled": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_clip_upload_with_story": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_dashboard_clip_bulk_edit": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_dashboard_onboarding_ab": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_delay_datafix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_fix_thumb": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_privacy_fix": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_edit_modal_sticky_footer": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_clip_unpin": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_short_video_timeline": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_thumb_changing": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_fix_thumb_removing": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_historical_dashboard": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_edit_modal_bugfixes": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_share_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_video_add_to_channel": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_new_video_edit_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_playlist_season_route": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_recom_thematic_banners": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_short_video_edit_modal": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_use_uv_player_on_vkcom": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_use_uv_player_on_vkvideo": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "video_web_spa_for_kids_page": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "video_web_spa_mov_and_ser_page": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vkm_channels_global_search": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "vkm_clip_fs_pagination_off": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "vkm_clip_to_channel_button": {
+                              "type": "object",
+                              "properties": {
+                                "abGroupId": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langKeys": {
+                      "type": "object",
+                      "properties": {
+                        "global": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "local": {
+                          "type": "object",
+                          "properties": {
+                            "audio_action_dislike": {
+                              "type": "string"
+                            },
+                            "audio_action_sub_sheet_additional_loading": {
+                              "type": "string"
+                            },
+                            "audio_add_to_audio": {
+                              "type": "string"
+                            },
+                            "audio_add_to_new_pl": {
+                              "type": "string"
+                            },
+                            "audio_add_to_playlist": {
+                              "type": "string"
+                            },
+                            "audio_alert_cancel_label_default": {
+                              "type": "string"
+                            },
+                            "audio_alert_confirm_label_default": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete": {
+                              "type": "string"
+                            },
+                            "audio_claim_delete_capital": {
+                              "type": "string"
+                            },
+                            "audio_claim_objection": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning": {
+                              "type": "string"
+                            },
+                            "audio_claim_warning_title": {
+                              "type": "string"
+                            },
+                            "audio_claimed_geo": {
+                              "type": "string"
+                            },
+                            "audio_claimed_replacement_available": {
+                              "type": "string"
+                            },
+                            "audio_copy_audio_link": {
+                              "type": "string"
+                            },
+                            "audio_legal_notice_line_foreign_agent": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_description": {
+                              "type": "string"
+                            },
+                            "audio_music_playlist_crash_placeholder_header": {
+                              "type": "string"
+                            },
+                            "audio_open_album": {
+                              "type": "string"
+                            },
+                            "audio_podcast_open_episode": {
+                              "type": "string"
+                            },
+                            "audio_replace_with_original": {
+                              "type": "string"
+                            },
+                            "audio_row_show_all_playlists": {
+                              "type": "string"
+                            },
+                            "audio_set_next_audio": {
+                              "type": "string"
+                            },
+                            "audio_share_audio": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_header": {
+                              "type": "string"
+                            },
+                            "audio_site_rules_violation_warning": {
+                              "type": "string"
+                            },
+                            "blank_too_many_recent_actions": {
+                              "type": "string"
+                            },
+                            "box_close": {
+                              "type": "string"
+                            },
+                            "box_send": {
+                              "type": "string"
+                            },
+                            "calls_cancel": {
+                              "type": "string"
+                            },
+                            "calls_delete": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_has_messages_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_in_contacts_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_calls_nested_description": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_load_settings_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_notification_save_success_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_allowed_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_empty_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_excluded_title": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_or_lists_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_friends_placeholder": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_loading_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_select_search_error_message": {
+                              "type": "string"
+                            },
+                            "calls_privacy_management_modal_title": {
+                              "type": "string"
+                            },
+                            "calls_save": {
+                              "type": "string"
+                            },
+                            "captcha_cancel": {
+                              "type": "string"
+                            },
+                            "captcha_enter_code": {
+                              "type": "string"
+                            },
+                            "captcha_send": {
+                              "type": "string"
+                            },
+                            "global_action_confirmation": {
+                              "type": "string"
+                            },
+                            "global_apps": {
+                              "type": "string"
+                            },
+                            "global_audio_ad": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_btn": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_text": {
+                              "type": "string"
+                            },
+                            "global_audio_only_with_subscription_title": {
+                              "type": "string"
+                            },
+                            "global_back": {
+                              "type": "string"
+                            },
+                            "global_box_error_title": {
+                              "type": "string"
+                            },
+                            "global_box_title_back": {
+                              "type": "string"
+                            },
+                            "global_cancel": {
+                              "type": "string"
+                            },
+                            "global_captcha_input_here": {
+                              "type": "string"
+                            },
+                            "global_chats": {
+                              "type": "string"
+                            },
+                            "global_close": {
+                              "type": "string"
+                            },
+                            "global_communities": {
+                              "type": "string"
+                            },
+                            "global_date": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_l": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_date_pre_free": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_delete": {
+                              "type": "string"
+                            },
+                            "global_delete_audio": {
+                              "type": "string"
+                            },
+                            "global_error": {
+                              "type": "string"
+                            },
+                            "global_error_occured": {
+                              "type": "string"
+                            },
+                            "global_friends": {
+                              "type": "string"
+                            },
+                            "global_head_logout": {
+                              "type": "string"
+                            },
+                            "global_hours_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_just_now": {
+                              "type": "string"
+                            },
+                            "global_long_weeks": {
+                              "type": "string"
+                            },
+                            "global_mins_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_money_amount_rub": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "global_news_search_results": {
+                              "type": "string"
+                            },
+                            "global_recaptcha_title": {
+                              "type": "string"
+                            },
+                            "global_secs_ago": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "langVersion": {
+                      "type": "string"
+                    },
+                    "loaderVersion": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "static": {
+                      "type": "string"
+                    },
+                    "statsMeta": {
+                      "type": "object",
+                      "properties": {
+                        "hash": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "number"
+                        },
+                        "platform": {
+                          "type": "string"
+                        },
+                        "reloadVersion": {
+                          "type": "number"
+                        },
+                        "st": {
+                          "type": "boolean"
+                        },
+                        "time": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "templates": {
+                      "type": "object",
+                      "properties": {
+                        "_": {
+                          "type": "string"
+                        },
+                        "stickers_sticker_url": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "vkEnv": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "env": {
+                    "pe": {
+                      "ads_legacy_routes": 1,
+                      "ads_market_autopromotion_bookmarks_stats": 1,
+                      "apps_show_app_slides_sheet_no_extra_closes": 1,
+                      "audio_recoms_onboarding_entry_points": 1,
+                      "audio_special_project_web": 1,
+                      "audio_studio_ads_block_enabled": 1,
+                      "avatar_component_refactor_web": 1,
+                      "avoid_multiple_init": 1,
+                      "await_spa_module": 1,
+                      "beauty_wizard_redesign": 1,
+                      "beauty_wizard_spa": 1,
+                      "bugs_tariff_interface": 1,
+                      "challenge_ajax_requests": 1,
+                      "claim_fz149": 1,
+                      "clips_fix_autoplay_legacy": 1,
+                      "clips_web_spa_backend": 1,
+                      "collect_ttlb": 1,
+                      "community_authors_onboarding": 1,
+                      "devadmin_splash_screen_go_uploader": 1,
+                      "disable_push_equal_history_location": 1
+                    },
+                    "toggles": {
+                      "clips_use_features_player_web": {
+                        "abGroupId": "null"
+                      },
+                      "clips_web_convert_from_post": {
+                        "abGroupId": "null"
+                      },
+                      "com_donut_for_user": {
+                        "abGroupId": "null"
+                      },
+                      "com_main_tab": {
+                        "abGroupId": "null"
+                      },
+                      "com_market_settings_vkpay_form": {
+                        "abGroupId": "null"
+                      },
+                      "com_profile_web_tabs_mobx": {
+                        "abGroupId": 1
+                      },
+                      "com_settings_managers": {
+                        "abGroupId": "null"
+                      },
+                      "com_settings_requests": {
+                        "abGroupId": "null"
+                      },
+                      "com_settings_subscribers": {
+                        "abGroupId": "null"
+                      },
+                      "feed_audience_research": {
+                        "abGroupId": "null"
+                      },
+                      "feed_forbid_anon_post_layer": {
+                        "abGroupId": "null"
+                      },
+                      "feed_get_feed": {
+                        "abGroupId": "null"
+                      },
+                      "feed_get_feed_secondary": {
+                        "abGroupId": "null"
+                      },
+                      "feed_image_auto_crop": {
+                        "abGroupId": "null"
+                      },
+                      "feed_legacy_attach_wrapper_fix": {
+                        "abGroupId": "null"
+                      },
+                      "feed_legacy_page_seen_ads_stat": {
+                        "abGroupId": "null"
+                      },
+                      "feed_nine_grid_update": {
+                        "abGroupId": "null"
+                      },
+                      "feed_old_share_modal_stats": {
+                        "abGroupId": "null"
+                      },
+                      "feed_photo_crop": {
+                        "abGroupId": "null"
+                      },
+                      "feed_photo_edit_only_upload": {
+                        "abGroupId": "null"
+                      }
+                    }
+                  },
+                  "langKeys": {
+                    "global": [
+                      "unknown"
+                    ],
+                    "local": {
+                      "audio_action_dislike": "string",
+                      "audio_action_sub_sheet_additional_loading": "string",
+                      "audio_add_to_audio": "string",
+                      "audio_add_to_new_pl": "string",
+                      "audio_add_to_playlist": "string",
+                      "audio_alert_cancel_label_default": "string",
+                      "audio_alert_confirm_label_default": "string",
+                      "audio_claim_delete": "string",
+                      "audio_claim_delete_capital": "string",
+                      "audio_claim_objection": "string",
+                      "audio_claim_warning": "string",
+                      "audio_claim_warning_title": "string",
+                      "audio_claimed_geo": "string",
+                      "audio_claimed_replacement_available": "string",
+                      "audio_copy_audio_link": "string",
+                      "audio_legal_notice_line_foreign_agent": "string",
+                      "audio_music_playlist_crash_placeholder_description": "string",
+                      "audio_music_playlist_crash_placeholder_header": "string",
+                      "audio_open_album": "string",
+                      "audio_podcast_open_episode": "string"
+                    }
+                  },
+                  "langVersion": "string",
+                  "loaderVersion": "string",
+                  "payload": [
+                    1
+                  ],
+                  "static": "string",
+                  "statsMeta": {
+                    "hash": "string",
+                    "id": 1,
+                    "platform": "string",
+                    "reloadVersion": 1,
+                    "st": true,
+                    "time": 1
+                  },
+                  "templates": {
+                    "_": "string",
+                    "stickers_sticker_url": "string"
+                  },
+                  "vkEnv": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "public",
+          "category": "other",
+          "auth_hint": "cookie/session",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/al_tickets.php"
+        }
+      }
+    }
+  }
+}

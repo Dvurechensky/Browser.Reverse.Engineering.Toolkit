@@ -1,0 +1,87 @@
+{
+  "root": "exports",
+  "postman": [
+    "exports/postman/collection.json",
+    "exports/postman/environment.json"
+  ],
+  "swagger": [
+    "exports/swagger/openapi-public.json",
+    "exports/swagger/openapi-3.0-public.json",
+    "exports/swagger/openapi-3.1-public.json",
+    "exports/swagger/swagger-public.json",
+    "exports/swagger/swagger-2.0-public.json",
+    "exports/swagger/openapi-api.json",
+    "exports/swagger/openapi-3.0-api.json",
+    "exports/swagger/openapi-3.1-api.json",
+    "exports/swagger/swagger-api.json",
+    "exports/swagger/swagger-2.0-api.json",
+    "exports/swagger/openapi-auth.json",
+    "exports/swagger/openapi-3.0-auth.json",
+    "exports/swagger/openapi-3.1-auth.json",
+    "exports/swagger/swagger-auth.json",
+    "exports/swagger/swagger-2.0-auth.json",
+    "exports/swagger/openapi-media.json",
+    "exports/swagger/openapi-3.0-media.json",
+    "exports/swagger/openapi-3.1-media.json",
+    "exports/swagger/swagger-media.json",
+    "exports/swagger/swagger-2.0-media.json",
+    "exports/swagger/openapi-telemetry.json",
+    "exports/swagger/openapi-3.0-telemetry.json",
+    "exports/swagger/openapi-3.1-telemetry.json",
+    "exports/swagger/swagger-telemetry.json",
+    "exports/swagger/swagger-2.0-telemetry.json"
+  ],
+  "graphs": [
+    "exports/graphs/module_graph.json",
+    "exports/graphs/entity_graph.json"
+  ],
+  "pdf": [
+    "exports/pdf/report-print.html"
+  ],
+  "json": [
+    "exports/json/normalized.json",
+    "exports/json/architecture.json",
+    "exports/json/api_map.json",
+    "exports/json/api_topology.json",
+    "exports/json/telemetry_report.json",
+    "exports/json/module_graph.json",
+    "exports/json/scenario_graph.json",
+    "exports/json/entity_map.json",
+    "exports/json/security_report.json",
+    "exports/json/privacy_signals.json",
+    "exports/json/storage_analysis.json",
+    "exports/json/vulnerability_hints.json",
+    "exports/json/osint_report.json",
+    "exports/json/quality_scores.json",
+    "exports/json/typescript_sdk_export.json",
+    "exports/json/mock_server_export.json"
+  ],
+  "typescript_sdk": [
+    "exports/typescript-sdk/package.json",
+    "exports/typescript-sdk/tsconfig.json",
+    "exports/typescript-sdk/README.md",
+    "exports/typescript-sdk/src/index.ts",
+    "exports/typescript-sdk/src/types.ts",
+    "exports/typescript-sdk/src/client.ts",
+    "exports/typescript-sdk/src/endpoints.ts",
+    "exports/typescript-sdk/manifest.json"
+  ],
+  "typescript_sdk_bundle": "exports/typescript-sdk.zip",
+  "mock_servers": [
+    "exports/mock-servers/VkApi.zip",
+    "exports/mock-servers/VkAuth.zip",
+    "exports/mock-servers/VkMedia.zip",
+    "exports/mock-servers/VkPublic.zip",
+    "exports/mock-servers/VkTelemetry.zip"
+  ],
+  "mock_servers_bundle": "exports/mock-servers.zip",
+  "counts": {
+    "swagger_specs": 25,
+    "postman_folders": 4,
+    "typescript_sdk_files": 8,
+    "dotnet_mock_archives": 5,
+    "module_nodes": 100,
+    "entity_nodes": 126,
+    "storage_json_files": 1
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SiteReconstructor Auth API",
+    "version": "0.1.0",
+    "description": "Swagger 2.0 compatibility export generated from authorized passive capture evidence."
+  },
+  "host": "api.vk.com",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/",
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/method/video.getStatsToken": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "POST /method/video.getStatsToken",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: auth likely. Confidence: 83%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "auth",
+          "category": "auth",
+          "source_url": "/method/video.getStatsToken",
+          "draft": true
+        }
+      }
+    },
+    "/api/crash/uploadBatch": {
+      "post": {
+        "tags": [
+          "Upload",
+          "Auth"
+        ],
+        "summary": "POST /api/crash/uploadBatch",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: auth likely. Confidence: 68%.",
+        "consumes": [
+          "application/octet-stream"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "compressType",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "crashToken",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sdkVersion",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "auth",
+          "category": "upload",
+          "source_url": "/api/crash/uploadBatch",
+          "draft": true
+        }
+      }
+    }
+  }
+}

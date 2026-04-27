@@ -1,0 +1,267 @@
+{
+  "authorized_review_only": true,
+  "language": "privacy_and_configuration_signals",
+  "signals": [
+    {
+      "affected": {
+        "hosts": [
+          "sun1-28.userapi.com",
+          "sdk-api.apptracer.ru",
+          "login.vk.com",
+          "stats.vk-portal.net",
+          "sun1-47.userapi.com"
+        ],
+        "routes": []
+      },
+      "business_impact": "URLs can be copied into logs, analytics tools, referrers, and support tickets.",
+      "confidence": 0.78,
+      "evidence": [
+        "https://sun1-28.userapi.com/s/v1/ig2/j4cU6KAdPau26OcXH9Pym2CVnCAliccEZySecvUeKWD8WT4S87mzAGMRoaOSwDA2Et1ajtvCzIHXyjwTiMKb9uW_.jpg?size=340x604&quality=95&blur=0,40&type=story",
+        "https://sdk-api.apptracer.ru/api/crash/trackSession?crashToken=[masked]&sdkVersion=2.6.5",
+        "https://login.vk.com/?act=web_token",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "https://sun1-47.userapi.com/s/v1/ig2/-H1zNtiBCxqz0Pn9FVvX5p4qzow4nM2Qz7bSHtKn7JwtxuRifEY0G5C_BxSxSgdEHXxG08xThbq_BGo1omlDFhO3.jpg?quality=95&crop=28,17,317,317&as=32x32,48x48,72x72,108x108,160x160,240x240&ava=1&u=2v4P8RJOPND_VdT3xjoqVcHx96_4sSjGHeUGFjd2G74&cs=200x200"
+      ],
+      "id": "sensitive_values_in_query_string",
+      "severity": "high",
+      "suggested_review_action": "Review URL parameters, logging paths, and retention policies; move sensitive values to headers or body where appropriate.",
+      "title": "Sensitive values in query string"
+    },
+    {
+      "affected": {
+        "hosts": [
+          "sdk-api.apptracer.ru",
+          "stats.vk-portal.net"
+        ],
+        "routes": []
+      },
+      "business_impact": "Credential-like URL fields often require extra log hygiene and integration review.",
+      "confidence": 0.76,
+      "evidence": [
+        "https://sdk-api.apptracer.ru/api/crash/trackSession?crashToken=[masked]&sdkVersion=2.6.5",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "format=JSON&method=auth.anonymLogin&application_key=CIOPGQJGDIHBABABA&session_data=[masked]",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]",
+        "https://sdk-api.apptracer.ru/api/crash/uploadBatch?crashToken=[masked]&compressType=GZIP&sdkVersion=2.6.5",
+        "https://sdk-api.apptracer.ru/api/crash/uploadBatch?crashToken=[masked]&compressType=GZIP&sdkVersion=2.6.5",
+        "format=JSON&method=auth.anonymLogin&application_key=CIOPGQJGDIHBABABA&session_data=[masked]",
+        "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]"
+      ],
+      "id": "credential_like_parameters",
+      "severity": "high",
+      "suggested_review_action": "Review whether these parameters are credentials, session identifiers, or harmless opaque IDs.",
+      "title": "Credential-like parameters"
+    },
+    {
+      "affected": {
+        "hosts": [],
+        "routes": []
+      },
+      "business_impact": "Long-lived client storage may create privacy review and migration concerns.",
+      "confidence": 0.66,
+      "evidence": [
+        "cookies",
+        "localStorage",
+        "queue_credential_calls_cache_121364353_6287487",
+        "6287487:get_anonym_token:login:auth",
+        "lockkk_stats_cookie_lock",
+        "@METRICS_121364353_USER_INFO_STATS",
+        "short_video_auth_token",
+        "6287487:web_token:login:auth",
+        "userId",
+        "vk_player_user_video_prefs",
+        "stickers-v1-settings-disabledPeerIdsByUser",
+        "queue_credential_calls_cache_573142833_6287487",
+        "videoplayer_auth_token",
+        "@METRICS_573142833_USER_INFO_STATS",
+        "sessionStorage",
+        "vkSansCached",
+        "remixage18_user",
+        "profiles",
+        "user_stickers",
+        "cacheStorage"
+      ],
+      "id": "legacy_storage_patterns",
+      "severity": "high",
+      "suggested_review_action": "Review browser storage keys for lifecycle, retention, and sensitive data minimization.",
+      "title": "Legacy storage patterns"
+    },
+    {
+      "affected": {
+        "hosts": [
+          "top-fwz1.mail.ru",
+          "vk.com",
+          "st1-54.vk.com",
+          "ad.mail.ru"
+        ],
+        "routes": []
+      },
+      "business_impact": "Source maps can increase review scope and reveal frontend internals during vendor assessment.",
+      "confidence": 0.7,
+      "evidence": [
+        "https://top-fwz1.mail.ru/js/code.js.map",
+        "https://top-fwz1.mail.ru/js/code.js.map",
+        "https://vk.com/js/lang0_2.js?29622118.map",
+        "https://vk.com/js/loader_nav21312782823_0.js.map",
+        "https://st1-54.vk.com/dist/core_spa/error_monitoring.isolated.ba2231ec.js.map",
+        "https://st1-54.vk.com/dist/core_spa/core_spa_vk.db5c1bc7.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/71559.97d43506.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/11395.9ad1a066.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/98715.fd6b1680.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/99758.6d4f8678.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/24814.65ca156f.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/96725.fc728563.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/49849.fda27a54.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/80681.f362359d.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/51220.19d8a9c9.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/35250.935cea31.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/25901.31b26401.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/25426.c45d6020.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/62727.a034d6c4.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/68670.5dd000ed.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/8140.e1668e5e.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/91976.f2b18ad9.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/16312.94706192.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/14792.3f734377.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/31184.1df431d4.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/39507.29c8380c.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/80276.871ffe5b.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/28539.1c87db80.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/73876.259965b3.js.map",
+        "https://st1-54.vk.com/dist/core_spa/chunks/43070.e58475d0.js.map"
+      ],
+      "id": "public_source_maps",
+      "severity": "medium",
+      "suggested_review_action": "Confirm whether source maps are intentionally published and restrict them if not required for operations.",
+      "title": "Public source map signals"
+    },
+    {
+      "affected": {
+        "hosts": [],
+        "routes": []
+      },
+      "business_impact": "Vendor concentration and broad tracking can affect privacy posture and enterprise procurement.",
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "confidence": 0.73,
+          "examples": [
+            "https://sdk-api.apptracer.ru/api/crash/trackSession?crashToken=[masked]&sdkVersion=2.6.5",
+            "https://sdk-api.apptracer.ru/api/crash/uploadBatch?crashToken=[masked]&compressType=GZIP&sdkVersion=2.6.5"
+          ],
+          "host": "sdk-api.apptracer.ru",
+          "kind": "third-party",
+          "request_count": 2,
+          "vendor": "AppTracer"
+        },
+        {
+          "confidence": 0.5900000000000001,
+          "examples": [
+            "https://stats.vk-portal.net/web-stats/p?device_id=7305f8629796246687a54c7e31b3355f&domain_sid=[masked]"
+          ],
+          "host": "stats.vk-portal.net",
+          "kind": "third-party",
+          "request_count": 1,
+          "vendor": "unknown"
+        },
+        {
+          "confidence": 0.5900000000000001,
+          "examples": [
+            "https://tns-counter.ru/"
+          ],
+          "host": "tns-counter.ru",
+          "kind": "third-party",
+          "request_count": 1,
+          "vendor": "unknown"
+        }
+      ],
+      "id": "excessive_third_party_trackers",
+      "severity": "medium",
+      "suggested_review_action": "Review vendor list, data processing purposes, and route-level tracking behavior.",
+      "title": "Excessive third-party trackers"
+    },
+    {
+      "affected": {
+        "hosts": [],
+        "routes": []
+      },
+      "business_impact": "Incorrect caching can complicate compliance review and shared-device behavior.",
+      "confidence": 0.58,
+      "evidence": [
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=604800",
+        "max-age=604800",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000",
+        "max-age=315360000"
+      ],
+      "id": "misconfigured_cache_headers",
+      "severity": "medium",
+      "suggested_review_action": "Review cache headers for pages and responses carrying user-specific or sensitive data.",
+      "title": "Misconfigured cache header signals"
+    },
+    {
+      "affected": {
+        "hosts": [],
+        "routes": []
+      },
+      "business_impact": "Extra runtime metadata can slow due diligence and expose implementation details to client teams.",
+      "confidence": 0.62,
+      "evidence": [
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__",
+        "__VUE_DEVTOOLS_GLOBAL_HOOK__",
+        "webpack",
+        "__debugMode",
+        "debug",
+        "debugLog",
+        "webpackChunkvk",
+        "webpackChunkvkweb",
+        "webpackChunkvkweb_legacy",
+        "webpackChunkvk",
+        "webpackChunkvkweb",
+        "webpackChunkvkweb_legacy",
+        "webpackChunkvk",
+        "webpackChunkvkweb",
+        "webpackChunkvkweb_legacy"
+      ],
+      "id": "verbose_debug_assets",
+      "severity": "low",
+      "suggested_review_action": "Review production build flags and remove unnecessary debug/runtime metadata.",
+      "title": "Verbose debug assets or runtime globals"
+    }
+  ],
+  "summary": {
+    "confidence": "68%",
+    "high": 3,
+    "low": 1,
+    "medium": 3,
+    "total": 7
+  }
+}

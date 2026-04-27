@@ -1,0 +1,58 @@
+{
+  "name": "vk.com environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "https://vk.com",
+      "enabled": true
+    },
+    {
+      "key": "api_base_url",
+      "value": "https://api.vk.com",
+      "enabled": true
+    },
+    {
+      "key": "auth_base_url",
+      "value": "https://api.vk.com",
+      "enabled": true
+    },
+    {
+      "key": "media_base_url",
+      "value": "https://st1-54.vk.com",
+      "enabled": true
+    },
+    {
+      "key": "telemetry_base_url",
+      "value": "https://stats.vk-portal.net",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "enabled": true,
+      "type": "secret"
+    },
+    {
+      "key": "session_cookie",
+      "value": "",
+      "enabled": true,
+      "type": "secret"
+    },
+    {
+      "key": "csrf_token",
+      "value": "",
+      "enabled": true,
+      "type": "secret"
+    },
+    {
+      "key": "tenant_id",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}

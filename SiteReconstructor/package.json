@@ -1,0 +1,13 @@
+{
+	"name": "site-reconstructor",
+	"version": "0.1.0",
+	"private": false,
+	"description": "Offline SiteSnapshotter v4 architecture intelligence portal generator.",
+	"main": "index.js",
+	"scripts": {
+		"reconstruct": "node index.js",
+		"serve": "node index.js --serve",
+		"check": "node --check index.js && node --check src/reconstructor/cli.js && node --check src/reconstructor/capture.js && node --check src/reconstructor/analysis.js && node --check src/reconstructor/reportWriter.js && node --check src/reconstructor/utils.js && node --check src/reconstructor/constants.js"
+	},
+	"license": "MIT"
+}

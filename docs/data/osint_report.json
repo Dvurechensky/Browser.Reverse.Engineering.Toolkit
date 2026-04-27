@@ -1,0 +1,132 @@
+{
+  "confidence_notes": [
+    "All required capture modules were present."
+  ],
+  "likely_architecture": {
+    "backend_guess": {
+      "confidence": 0.68,
+      "hosts": [
+        "vk.com",
+        "st1-54.vk.com",
+        "top-fwz1.mail.ru",
+        "sdk-api.apptracer.ru",
+        "login.vk.com",
+        "sun1-95.userapi.com",
+        "tns-counter.ru",
+        "ads.vk.com",
+        "api.vk.com",
+        "r.mradx.net",
+        "sun1-47.userapi.com",
+        "stats.vk-portal.net",
+        "23112.ms.vk.com",
+        "api.okcdn.ru",
+        "25112.ms.vk.com",
+        "1436659--176841276-111.news.ms.vk.com",
+        "vkvd744.okcdn.ru",
+        "sun1-18.userapi.com",
+        "sun1-27.userapi.com",
+        "sun1-30.userapi.com",
+        "sun1-24.userapi.com",
+        "sun1-23.userapi.com",
+        "sun1-92.userapi.com",
+        "sun1-22.userapi.com",
+        "sun1-89.userapi.com",
+        "sun1-54.userapi.com",
+        "sun1-13.userapi.com",
+        "sun1-85.userapi.com",
+        "sun1-15.userapi.com",
+        "sun1-88.userapi.com"
+      ],
+      "likely_patterns": [
+        {
+          "count": 8,
+          "name": "PHP endpoints"
+        },
+        {
+          "count": 41,
+          "name": "RPC method namespace"
+        }
+      ]
+    },
+    "frontend_stack": [
+      "webpackChunkvk",
+      "webpackChunkvkweb",
+      "webpackChunkvkweb_legacy",
+      "Custom SPA Runtime",
+      "React",
+      "Webpack",
+      "Vite",
+      "mobx",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"Logo__icon--eLIzO vkuiIcon vkuiIcon--136 vkuiIcon--w-136 vkuiIcon--h-24 vkuiIcon--new_logo_vk_with_text\" width=\"136\" height=\"24\" viewBox=\"0 0 136 24\" fill=\"none\" style=\"width: 136px; height: 24px;\"><g clip-path=\"url(#new_logo_vk_with_text:rab:a)\"><g clip-path=\"url(#new_logo_vk_with_text:rab:b)\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M67 12.501C67 15.843 64.567 18 61.12 18s-5.88-2.157-5.88-5.499S57.672 7 61.12 7 67 9.16 67 12.501m-9.222 0c0 2.073 1.354 3.499 3.342 3.499s3.342-1.426 3.342-3.499S63.108 9.05 61.12 9.05s-3.342 1.378-3.342 3.451m-17.032-.211c.952-.445 1.565-1.185 1.565-2.327 0-1.734-1.586-2.961-3.87-2.961h-5.266V18h5.499c2.368 0 4.018-1.29 4.018-3.046a2.76 2.76 0 0 0-1.946-2.665m-5.14-3.279h2.835c.846 0 1.438.508 1.438 1.206s-.592 1.184-1.438 1.184h-2.834zm3.068 6.98h-3.067v-2.686h3.067c.951 0 1.586.55 1.586 1.353 0 .804-.635 1.333-1.586 1.333M51.836 18h3.194l-5.055-5.71 4.632-5.288h-2.898l-3.68 4.272h-.592V7.002h-2.432V18h2.432v-4.378h.592zm24.63-10.998v4.336h-4.928V7.002h-2.433V18h2.433v-4.441h4.927V18h2.433V7.002zM86.905 18h-2.432V9.223h-3.807V7.002h10.046v2.22h-3.807zm9.702-11c-2.136 0-4.018.89-4.568 2.794l2.242.38c.338-.676 1.1-1.254 2.2-1.254 1.332 0 2.115.895 2.22 2.333h-2.368c-3.236 0-4.844 1.417-4.844 3.448 0 2.051 1.587 3.299 3.828 3.299 1.798 0 3.004-.825 3.532-1.734L99.358 18h1.798v-6.176c0-3.193-1.735-4.824-4.547-4.824m-.719 9.16c-1.184 0-1.945-.613-1.945-1.565 0-.846.613-1.438 2.474-1.438h2.305c0 1.797-1.142 3.003-2.834 3.003M113.73 18h-3.194l-3.807-4.378h-.592V18h-2.432V7.002h2.432v4.272h.592l3.68-4.272h2.898l-4.632 5.288zm4.274 0h2.432V9.223h3.807V7.002h-10.046v2.22h3.807zm12.287-11c3.341 0 5.71 2.202 5.71 5.374 0 .296-.021.55-.042.783h-8.841c.233 1.692 1.459 2.834 3.321 2.834 1.29 0 2.305-.55 2.834-1.333l2.284.381c-.825 2.094-2.982 2.961-5.266 2.961-3.342 0-5.711-2.178-5.711-5.499S126.949 7 130.291 7m3.066 4.253C132.955 9.878 131.813 9 130.291 9c-1.481 0-2.623.836-3.025 2.253z\" clip-rule=\"evenodd\"></path><path fill=\"#07f\" d=\"M11.505 24h1c5.432 0 8.144 0 9.824-1.68C24 20.638 24 17.916 24 12.504v-1.01c0-5.412 0-8.124-1.67-9.814C20.648 0 17.927 0 12.504 0h-1C6.073 0 3.36 0 1.68 1.68 0 3.362 0 6.084 0 11.496v1.01c0 5.412 0 8.124 1.68 9.814C3.362 24 6.084 24 11.506 24\"></path><path fill=\"#fff\" d=\"M12.77 17.29c-5.47 0-8.59-3.75-8.72-9.99h2.74c.09 4.58 2.11 6.52 3.71 6.92V7.3h2.58v3.95c1.58-.17 3.24-1.97 3.8-3.95h2.58c-.43 2.44-2.23 4.24-3.51 4.98 1.28.6 3.33 2.17 4.11 5.01h-2.84c-.61-1.9-2.13-3.37-4.14-3.57v3.57z\"></path></g></g><defs><clipPath id=\"new_logo_vk_with_text:rab:a\"><path fill=\"#fff\" d=\"M.001 0h136v24h-136z\"></path></clipPath><clipPath id=\"new_logo_vk_with_text:rab:b\"><path fill=\"#fff\" d=\"M0-12h136v48H0z\"></path></clipPath></defs></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--search_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" style=\"width: 16px; height: 16px;\"><path fill=\"currentColor\" d=\"M6.5 1a5.5 5.5 0 0 1 4.384 8.823l3.895 3.9a.75.75 0 0 1-1.061 1.06l-3.895-3.9A5.5 5.5 0 1 1 6.5 1m0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--cancel_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path d=\"M7.536 6.264a.9.9 0 0 0-1.272 1.272L10.727 12l-4.463 4.464a.9.9 0 0 0 1.272 1.272L12 13.273l4.464 4.463a.9.9 0 1 0 1.272-1.272L13.273 12l4.463-4.464a.9.9 0 1 0-1.272-1.272L12 10.727z\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--notification_outline_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path d=\"M12.004 2.1c4.015 0 6.896 3.278 6.896 7.532v1.6c0 .228.193.531.72 1.075l.27.275c1.082 1.097 1.51 1.729 1.51 2.745 0 .445-.052.791-.268 1.206-.456.878-1.423 1.367-2.869 1.367l-1.912.001c-.629 2.332-2.13 3.6-4.351 3.6-2.245 0-3.754-1.295-4.371-3.675l.019.074H5.737c-1.488 0-2.466-.502-2.902-1.41-.191-.398-.235-.72-.235-1.163 0-1.016.428-1.648 1.51-2.745l.27-.275c.527-.544.72-.847.72-1.076v-1.6C5.1 5.38 7.988 2.1 12.004 2.1m2.462 15.802H9.534C9.99 19.148 10.776 19.7 12 19.7s2.01-.552 2.466-1.798M12.004 3.9C9.036 3.9 6.9 6.327 6.9 9.632v1.6c0 .852-.39 1.463-1.228 2.328-.073.075-.142.146-.281.286-.747.758-.991 1.118-.991 1.481 0 .192.014.292.057.382.107.224.433.391 1.28.391h12.526c.82 0 1.153-.169 1.272-.397.05-.095.065-.197.065-.376 0-.363-.244-.723-.99-1.48-.14-.141-.209-.212-.282-.287-.839-.865-1.228-1.476-1.228-2.329v-1.6c0-3.307-2.13-5.731-5.096-5.731\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--music_outline_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"width: 24px; height: 24px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M16.716 4.105c.61-.127 1.01-.21 1.317-.246.299-.036.408-.013.457.004a.9.9 0 0 1 .485.395c.026.043.07.146.097.446.027.304.028.705.028 1.314L8.9 8.143v-.54c0-.477 0-.786.018-1.024.017-.228.046-.328.073-.39a1.1 1.1 0 0 1 .374-.46c.055-.039.147-.088.366-.15.23-.067.533-.13 1-.227zM7.1 15.1h-.2c-1.795 0-3.125.452-4.02 1.215-.903.768-1.28 1.782-1.28 2.71A3.375 3.375 0 0 0 4.975 22.4c.928 0 1.942-.377 2.71-1.28.763-.895 1.215-2.225 1.215-4.02V9.982l10.2-2.125V13.1h-.2c-1.795 0-3.125.452-4.021 1.215-.902.768-1.279 1.782-1.279 2.71a3.375 3.375 0 0 0 3.375 3.375c.928 0 1.942-.377 2.71-1.28.763-.895 1.215-2.225 1.215-4.02V6.004c0-.573 0-1.061-.035-1.457-.036-.412-.116-.824-.34-1.204a2.7 2.7 0 0 0-1.457-1.185c-.417-.141-.836-.135-1.247-.087-.395.047-.873.147-1.434.264l-.038.007-5.985 1.247-.03.007c-.429.089-.797.166-1.099.252-.32.092-.624.21-.908.41a2.9 2.9 0 0 0-.987 1.214c-.139.32-.192.642-.217.974-.023.313-.023.689-.023 1.126v.031zm8.946.585c-.473.403-.646.901-.646 1.34 0 .87.705 1.575 1.575 1.575.439 0 .937-.173 1.34-.646.408-.479.785-1.349.785-2.854v-.2h-.2c-1.505 0-2.375.377-2.854.785M3.4 19.025c0-.439.173-.937.646-1.34.479-.408 1.349-.785 2.854-.785h.2v.2c0 1.505-.377 2.375-.785 2.854-.403.473-.901.646-1.34.646-.87 0-1.575-.705-1.575-1.575\" clip-rule=\"evenodd\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconTertiary--G7FAa vkuiIcon vkuiIcon--12 vkuiIcon--w-12 vkuiIcon--h-8 vkuiIcon--dropdown_12\" width=\"12\" height=\"8\" viewBox=\"0 0 12 8\" fill=\"none\" style=\"width: 12px; height: 8px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2.156 2.295a.75.75 0 0 1 1.051-.137L6 4.306l2.793-2.148a.75.75 0 1 1 .914 1.189l-3.25 2.5a.75.75 0 0 1-.914 0l-3.25-2.5a.75.75 0 0 1-.137-1.052\" clip-rule=\"evenodd\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--settings_24\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" style=\"width: 16px; height: 16px;\"><g fill=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M9.127 5.052c1.256-.72 1.473-1.469 1.623-2.219.167-.833.417-.833.833-.833h.834c.416 0 .583 0 .833.833.225.751.383 1.502 1.631 2.223 1.397.379 2.08.002 2.717-.422.707-.471.884-.294 1.178 0l.59.59c.294.294.412.412 0 1.178-.372.69-.791 1.333-.418 2.725.72 1.256 1.469 1.473 2.219 1.623.833.167.833.417.833.833v.834c0 .416 0 .583-.833.833-.751.225-1.502.383-2.223 1.631-.379 1.397-.002 2.08.422 2.717.471.707.294.884 0 1.178l-.59.59c-.294.294-.412.412-1.178 0-.69-.372-1.333-.791-2.725-.418-1.256.72-1.473 1.469-1.623 2.219-.167.833-.417.833-.833.833h-.834c-.416 0-.583 0-.833-.833-.225-.751-.383-1.502-1.631-2.223-1.397-.379-2.08-.002-2.717.422-.707.471-.884.294-1.178 0l-.59-.59c-.294-.294-.412-.412 0-1.178.372-.69.791-1.333.418-2.725-.72-1.256-1.469-1.473-2.219-1.623C2 13.083 2 12.833 2 12.417v-.834c0-.416 0-.583.833-.833.751-.225 1.502-.383 2.223-1.631.379-1.397.002-2.08-.422-2.717-.471-.707-.294-.884 0-1.178l.59-.59c.294-.294.412-.412 1.178 0 .69.372 1.333.791 2.725.418M12 16.75a4.75 4.75 0 1 0 0-9.5 4.75 4.75 0 0 0 0 9.5\"></path></g></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--12 vkuiIcon--w-12 vkuiIcon--h-12 vkuiIcon--chevron_down_small_12\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"currentColor\" style=\"width: 12px; height: 12px;\"><path fill-rule=\"evenodd\" d=\"M3.202 4.736a.754.754 0 0 1 1.06-.036L6 6.31 7.738 4.7a.754.754 0 0 1 1.06.036.74.74 0 0 1-.036 1.052L6.648 7.746a.955.955 0 0 1-1.296 0L3.238 5.788a.74.74 0 0 1-.036-1.052\" clip-rule=\"evenodd\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-12 vkuiIcon--h-16 vkuiIcon--chevron_16\" width=\"12\" height=\"16\" viewBox=\"0 0 12 16\" fill=\"none\" style=\"width: 12px; height: 16px;\"><path fill=\"currentColor\" d=\"M7.227 8 3.864 4.636a.9.9 0 0 1 1.272-1.272l4 4a.9.9 0 0 1 0 1.272l-4 4a.9.9 0 0 1-1.272-1.272z\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--filter_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" data-testid=\"friends_search_filters\" aria-expanded=\"false\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path fill-rule=\"evenodd\" d=\"M6.242 8.9a2.901 2.901 0 0 0 5.516 0H20a.9.9 0 1 0 0-1.8h-8.242a2.901 2.901 0 0 0-5.515 0H4a.9.9 0 1 0 0 1.8zM9 6.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2M3.1 16a.9.9 0 0 1 .9-.9h8.242a2.901 2.901 0 0 1 5.516 0H20a.9.9 0 1 1 0 1.8h-2.242a2.901 2.901 0 0 1-5.516 0H4a.9.9 0 0 1-.9-.9m10.8 0a1.1 1.1 0 1 1 2.2 0 1.1 1.1 0 0 1-2.2 0\" clip-rule=\"evenodd\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--message_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" style=\"width: 16px; height: 16px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M5.627 13.231a8 8 0 0 0 2.385.36c3.769 0 6.988-2.623 6.988-6.045S11.78 1.5 8.012 1.5c-3.77 0-6.989 2.624-6.989 6.046a5.4 5.4 0 0 0 .98 3.084c-.052.735-.431 1.564-.778 2.323l-.148.324c-.266.59.193 1.247.83 1.222 1.563-.06 2.84-.453 3.72-1.268m-.382-1.692.83.26a6.5 6.5 0 0 0 1.937.293c3.18 0 5.488-2.173 5.488-4.546S11.191 3 8.012 3 2.524 5.172 2.524 7.546a3.9 3.9 0 0 0 .712 2.231l.299.433-.036.523c-.045.647-.246 1.266-.442 1.767a13 13 0 0 1-.16.39c.79-.146 1.341-.417 1.71-.759z\" clip-rule=\"evenodd\"></path></svg>",
+      "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--phone_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"currentColor\" style=\"width: 16px; height: 16px;\"><path d=\"m9.21 9.862-.42.42a.41.41 0 0 1-.428.094q-.626-.23-1.565-1.17-.94-.937-1.169-1.564a.41.41 0 0 1 .094-.428l.42-.42c.773-.774.844-1.992.162-2.801l-.492-.586c-.562-.668-1.574-.736-2.262-.15a1.9 1.9 0 0 0-.647 1.254q-.377 2.805 2.703 5.887 3.082 3.083 5.886 2.705a1.9 1.9 0 0 0 1.254-.648c.585-.687.517-1.7-.15-2.263l-.586-.493c-.81-.68-2.027-.61-2.8.164ZM7.604 8.4c.299.299.56.526.77.68 1.214-1.213 3.101-1.323 4.371-.255l.585.493c1.16.976 1.275 2.715.28 3.884a3 3 0 0 1-1.967 1.033c-2.274.307-4.562-.745-6.845-3.029-2.284-2.284-3.335-4.573-3.034-6.797A3 3 0 0 1 2.81 2.384c1.164-.99 2.901-.873 3.876.287l.492.584c1.07 1.269.96 3.158-.229 4.347.13.236.356.497.656.797Z\"></path></svg>"
+    ],
+    "site_type": "Commerce / Marketplace"
+  },
+  "observed_hosts": [
+    "1436659--176841276-111.news.ms.vk.com",
+    "23112.ms.vk.com",
+    "25112.ms.vk.com",
+    "ad.mail.ru",
+    "ads.vk.com",
+    "api.okcdn.ru",
+    "api.vk.com",
+    "login.vk.com",
+    "r.mradx.net",
+    "sdk-api.apptracer.ru",
+    "st1-54.vk.com",
+    "stats.vk-portal.net",
+    "sun1-13.userapi.com",
+    "sun1-14.userapi.com",
+    "sun1-15.userapi.com",
+    "sun1-16.userapi.com",
+    "sun1-18.userapi.com",
+    "sun1-21.userapi.com",
+    "sun1-22.userapi.com",
+    "sun1-23.userapi.com",
+    "sun1-24.userapi.com",
+    "sun1-25.userapi.com",
+    "sun1-27.userapi.com",
+    "sun1-28.userapi.com",
+    "sun1-30.userapi.com",
+    "sun1-47.userapi.com",
+    "sun1-54.userapi.com",
+    "sun1-55.userapi.com",
+    "sun1-56.userapi.com",
+    "sun1-85.userapi.com",
+    "sun1-88.userapi.com",
+    "sun1-89.userapi.com",
+    "sun1-91.userapi.com",
+    "sun1-92.userapi.com",
+    "sun1-93.userapi.com",
+    "sun1-94.userapi.com",
+    "sun1-95.userapi.com",
+    "tns-counter.ru",
+    "top-fwz1.mail.ru",
+    "vk.com",
+    "vkvd744.okcdn.ru"
+  ],
+  "offline_only": true,
+  "site": {
+    "host": "vk.com",
+    "language": "ru",
+    "timestamp": "2026-04-27T21:59:08.749Z",
+    "title": "Друзья Николая Двуреченского – 1601 друг",
+    "url": "https://vk.com/friends?section=all",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
+  },
+  "summary": [
+    "Observed 69 normalized endpoints.",
+    "Identified 100 frontend module signals.",
+    "Passive risk score: 66/100."
+  ]
+}

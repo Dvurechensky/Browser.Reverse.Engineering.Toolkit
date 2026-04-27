@@ -1,0 +1,47 @@
+{
+  "target": "https://app.example.com",
+  "auth": {
+    "mode": "manual",
+    "startCapture": "before-login",
+    "readySignal": "user-confirm",
+    "loginUrlPatterns": [
+      "/login",
+      "/signin",
+      "/auth"
+    ],
+    "loggedInSelectors": [
+      ".avatar",
+      "[data-user-menu]",
+      "a[href*='logout']"
+    ],
+    "loggedOutSelectors": [
+      "input[type='password']",
+      "form[action*='login' i]"
+    ]
+  },
+  "crawl": {
+    "enabled": true,
+    "sameOrigin": true,
+    "maxPages": 100,
+    "maxDepth": 3,
+    "settleMs": 1500,
+    "denyPatterns": [
+      "/logout",
+      "/signout",
+      "/delete",
+      "/remove",
+      "/payment",
+      "/checkout",
+      "/billing"
+    ]
+  },
+  "snapshotter": {
+    "mode": "intel",
+    "options": {
+      "download": false,
+      "mineRuntimeState": true,
+      "mineFeatureFlags": true
+    }
+  },
+  "reconstruct": true
+}

@@ -1,0 +1,19 @@
+# Dependencies
+**/node_modules/
+TODO.md
+# Build and generated outputs
+SiteReconstructor/reports/
+SiteSnapshotter/snapshots/
+SiteCrawlerSnapshotter/captures/
+SiteCrawlerSnapshotter/profiles/
+*.zip
+*.log
+
+# Environment and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Internal working notes
+docs/codex/

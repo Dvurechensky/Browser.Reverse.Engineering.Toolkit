@@ -1,0 +1,4 @@
+captures/
+profiles/
+node_modules/
+*.log

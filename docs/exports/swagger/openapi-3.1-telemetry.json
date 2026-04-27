@@ -1,0 +1,395 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SiteReconstructor Telemetry API",
+    "version": "0.1.0",
+    "description": "Generated from authorized passive website capture evidence. Schemas are inferred drafts until validated."
+  },
+  "servers": [
+    {
+      "url": "https://api.vk.com",
+      "description": "auth"
+    },
+    {
+      "url": "https://stats.vk-portal.net",
+      "description": "telemetry"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "paths": {
+    "/method/stats.trackEvents": {
+      "post": {
+        "tags": [
+          "Other",
+          "Telemetry"
+        ],
+        "summary": "POST /method/stats.trackEvents",
+        "description": "Inferred from passive capture. Auth hint: none observed. Confidence: 83%.",
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "example": {
+                  "response": 1
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "telemetry",
+          "category": "other",
+          "auth_hint": "none observed",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/method/stats.trackEvents"
+        }
+      }
+    },
+    "/web-stats/p": {
+      "post": {
+        "tags": [
+          "Other",
+          "Telemetry"
+        ],
+        "summary": "POST /web-stats/p",
+        "description": "Inferred from passive capture. Auth hint: cookie/session. Confidence: 79%.",
+        "parameters": [
+          {
+            "name": "device_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "domain_sid",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer {{access_token}}"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "appId": {
+                    "type": "number"
+                  },
+                  "attempt": {
+                    "type": "number"
+                  },
+                  "benchmarkMainStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "customStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "id": {
+                    "type": "number"
+                  },
+                  "networkStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "platform": {
+                    "type": "string"
+                  },
+                  "productionStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sign": {
+                    "type": "string"
+                  },
+                  "signTime": {
+                    "type": "number"
+                  },
+                  "st": {
+                    "type": "boolean"
+                  },
+                  "statlogEvents": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "storyViewStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "vkResStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "webPerfStats": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "example": {
+                "appId": 1,
+                "attempt": 1,
+                "benchmarkMainStats": [
+                  "unknown"
+                ],
+                "customStats": [
+                  "unknown"
+                ],
+                "id": 1,
+                "networkStats": [
+                  "unknown"
+                ],
+                "platform": "string",
+                "productionStats": [
+                  "unknown"
+                ],
+                "sign": "string",
+                "signTime": 1,
+                "st": true,
+                "statlogEvents": [
+                  [
+                    1
+                  ]
+                ],
+                "storyViewStats": [
+                  "unknown"
+                ],
+                "vkResStats": [
+                  "unknown"
+                ],
+                "webPerfStats": [
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "appId": {
+                      "type": "number"
+                    },
+                    "attempt": {
+                      "type": "number"
+                    },
+                    "benchmarkMainStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "customStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "id": {
+                      "type": "number"
+                    },
+                    "networkStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "platform": {
+                      "type": "string"
+                    },
+                    "productionStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "sign": {
+                      "type": "string"
+                    },
+                    "signTime": {
+                      "type": "number"
+                    },
+                    "st": {
+                      "type": "boolean"
+                    },
+                    "statlogEvents": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "storyViewStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "vkResStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "webPerfStats": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "appId": 1,
+                  "attempt": 1,
+                  "benchmarkMainStats": [
+                    "unknown"
+                  ],
+                  "customStats": [
+                    "unknown"
+                  ],
+                  "id": 1,
+                  "networkStats": [
+                    "unknown"
+                  ],
+                  "platform": "string",
+                  "productionStats": [
+                    "unknown"
+                  ],
+                  "sign": "string",
+                  "signTime": 1,
+                  "st": true,
+                  "statlogEvents": [
+                    [
+                      1
+                    ]
+                  ],
+                  "storyViewStats": [
+                    "unknown"
+                  ],
+                  "vkResStats": [
+                    "unknown"
+                  ],
+                  "webPerfStats": [
+                    "unknown"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.7899999999999999,
+          "server_kind": "telemetry",
+          "category": "other",
+          "auth_hint": "cookie/session",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/web-stats/p"
+        }
+      }
+    }
+  }
+}

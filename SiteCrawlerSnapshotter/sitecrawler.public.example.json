@@ -1,0 +1,30 @@
+{
+  "target": "https://example.com",
+  "auth": {
+    "mode": "none",
+    "startCapture": "immediately"
+  },
+  "crawl": {
+    "enabled": true,
+    "sameOrigin": true,
+    "maxPages": 30,
+    "maxDepth": 2,
+    "settleMs": 1200,
+    "denyPatterns": [
+      "/logout",
+      "/signout",
+      "/delete",
+      "/remove",
+      "/payment",
+      "/checkout"
+    ]
+  },
+  "snapshotter": {
+    "mode": "intel",
+    "options": {
+      "download": false,
+      "includeFullHtml": false
+    }
+  },
+  "reconstruct": false
+}

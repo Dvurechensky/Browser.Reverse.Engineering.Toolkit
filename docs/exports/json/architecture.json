@@ -1,0 +1,1301 @@
+{
+  "backend_guess": {
+    "confidence": 0.68,
+    "hosts": [
+      "vk.com",
+      "st1-54.vk.com",
+      "top-fwz1.mail.ru",
+      "sdk-api.apptracer.ru",
+      "login.vk.com",
+      "sun1-95.userapi.com",
+      "tns-counter.ru",
+      "ads.vk.com",
+      "api.vk.com",
+      "r.mradx.net",
+      "sun1-47.userapi.com",
+      "stats.vk-portal.net",
+      "23112.ms.vk.com",
+      "api.okcdn.ru",
+      "25112.ms.vk.com",
+      "1436659--176841276-111.news.ms.vk.com",
+      "vkvd744.okcdn.ru",
+      "sun1-18.userapi.com",
+      "sun1-27.userapi.com",
+      "sun1-30.userapi.com",
+      "sun1-24.userapi.com",
+      "sun1-23.userapi.com",
+      "sun1-92.userapi.com",
+      "sun1-22.userapi.com",
+      "sun1-89.userapi.com",
+      "sun1-54.userapi.com",
+      "sun1-13.userapi.com",
+      "sun1-85.userapi.com",
+      "sun1-15.userapi.com",
+      "sun1-88.userapi.com"
+    ],
+    "likely_patterns": [
+      {
+        "count": 8,
+        "name": "PHP endpoints"
+      },
+      {
+        "count": 41,
+        "name": "RPC method namespace"
+      }
+    ]
+  },
+  "confidence": {
+    "backend_guess": {
+      "confidence": 0.65,
+      "evidence": [
+        "cookie/html/url heuristic matched"
+      ],
+      "value": "PHP"
+    },
+    "frontend_stack": {
+      "confidence": 0.74,
+      "evidence": [
+        "Bootstrap detected",
+        "Webpack detected",
+        "Vite detected",
+        "Custom SPA Runtime detected",
+        "React detected"
+      ],
+      "value": "Bootstrap + Webpack + Vite + Custom SPA Runtime"
+    },
+    "telemetry_level": {
+      "confidence": 0.85,
+      "evidence": [
+        "telemetry events: 18"
+      ],
+      "value": "Medium"
+    }
+  },
+  "data_flows": [
+    {
+      "confidence": 0.9500000000000001,
+      "from": "click:Профиль",
+      "to": "other",
+      "via": "GET /"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "GET /images/gift/:id/animation.json"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/:id/8e/d4b28cc0b905374f.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/:id/c0/ca37933876686dcd.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/b6/:id/93a837dc06183017.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/cf/aa/a8655ac54f10b068.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/cf/e5/32db22916648f14d.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/df/:id/6fb16c27a25e2c38.svg"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "media",
+      "via": "GET /imgs/ee/:id/84ed4e4a5ae73316.svg"
+    },
+    {
+      "confidence": 0.67,
+      "from": "click:Мессенджер",
+      "to": "other",
+      "via": "HEAD /"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/feed",
+      "to": "config",
+      "via": "POST /al_feed_right_block.php"
+    },
+    {
+      "confidence": 0.98,
+      "from": "click:Freelancer Lizerium (Mod and Unity Project) Видеоигры",
+      "to": "other",
+      "via": "POST /al_groups.php"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Маркет",
+      "to": "other",
+      "via": "POST /al_market.php"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "POST /al_profile.php"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Помощь",
+      "to": "other",
+      "via": "POST /al_tickets.php"
+    },
+    {
+      "confidence": 0.91,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "likes",
+      "via": "POST /al_video.php"
+    },
+    {
+      "confidence": 0.59,
+      "from": "route_change:/market?utm_ref=left_menu",
+      "to": "upload",
+      "via": "POST /api/crash/uploadBatch"
+    },
+    {
+      "confidence": 0.87,
+      "from": "click:Мессенджер",
+      "to": "other",
+      "via": "POST /fb.do"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Сообщества",
+      "to": "other",
+      "via": "POST /method/account.getInfo"
+    },
+    {
+      "confidence": 0.98,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "config",
+      "via": "POST /method/account.getLeftAds"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "POST /method/account.getProfileDataLegacy"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Freelancer Lizerium (Mod and Unity Project) Видеоигры",
+      "to": "other",
+      "via": "POST /method/appWidgets.get"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/market?utm_ref=left_menu",
+      "to": "groups, friends",
+      "via": "POST /method/catalog.getClassifieds"
+    },
+    {
+      "confidence": 0.87,
+      "from": "change:select",
+      "to": "profiles, groups, friends",
+      "via": "POST /method/catalog.getGroups"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Поиск друзей",
+      "to": "profiles",
+      "via": "POST /method/catalog.getPeopleSearch"
+    },
+    {
+      "confidence": 0.83,
+      "from": "change:select",
+      "to": "groups, friends",
+      "via": "POST /method/catalog.getSection"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Мессенджер",
+      "to": "profiles, groups",
+      "via": "POST /method/channels.getOwnersForCreate"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/friends?section=all",
+      "to": "other",
+      "via": "POST /method/database.getCities"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Файлы",
+      "to": "other",
+      "via": "POST /method/docs.get"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Freelancer Lizerium (Mod and Unity Project) Видеоигры",
+      "to": "other",
+      "via": "POST /method/donut.getInfo"
+    },
+    {
+      "confidence": 0.98,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "files, comments, likes, profiles, users, message, friends, stories, groups, messages, feed",
+      "via": "POST /method/execute"
+    },
+    {
+      "confidence": 0.98,
+      "from": "route_change:/friends?section=all",
+      "to": "users",
+      "via": "POST /method/friends.get"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/friends?section=all",
+      "to": "other",
+      "via": "POST /method/friends.getCounters"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/friends?section=all",
+      "to": "other",
+      "via": "POST /method/friends.getLists"
+    },
+    {
+      "confidence": 0.63,
+      "from": "route_change:/friends?section=all",
+      "to": "presence",
+      "via": "POST /method/friends.getOnline"
+    },
+    {
+      "confidence": 0.87,
+      "from": "route_change:/friends?section=all",
+      "to": "chat",
+      "via": "POST /method/friends.getRecommendations"
+    },
+    {
+      "confidence": 0.91,
+      "from": "route_change:/friends?section=all",
+      "to": "users",
+      "via": "POST /method/friends.getRequests"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/feed",
+      "to": "presence",
+      "via": "POST /method/groups.get"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/market?utm_ref=left_menu",
+      "to": "other",
+      "via": "POST /method/market.getCounters"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Мессенджер",
+      "to": "profiles, groups",
+      "via": "POST /method/messages.getConversations"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Мессенджер",
+      "to": "chat",
+      "via": "POST /method/messages.getRecentStickers"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/feed",
+      "to": "comments, events, likes, profiles, groups",
+      "via": "POST /method/newsfeed.getFeed"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Мессенджер",
+      "to": "other",
+      "via": "POST /method/onboarding.get"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "POST /method/onboarding.getCards"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Голоса",
+      "to": "other",
+      "via": "POST /method/payments.getActiveTabs"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "click:Голоса",
+      "to": "other",
+      "via": "POST /method/payments.getVotesHistory"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "POST /method/photos.getAlbums"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Сообщества",
+      "to": "other",
+      "via": "POST /method/stats.trackEvents"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Мессенджер",
+      "to": "config",
+      "via": "POST /method/store.hasNewItems"
+    },
+    {
+      "confidence": 0.59,
+      "from": "route_change:/feed",
+      "to": "other",
+      "via": "POST /method/stories.get"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "from": "route_change:/friends?section=all",
+      "to": "friends, groups",
+      "via": "POST /method/users.get"
+    },
+    {
+      "confidence": 0.91,
+      "from": "change:select",
+      "to": "other",
+      "via": "POST /method/utils.resolveScreenName"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/feed",
+      "to": "files, event, comments, likes, groups",
+      "via": "POST /method/video.feedVideosForYouBlockItems"
+    },
+    {
+      "confidence": 0.83,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "comments, likes, files, event, profiles",
+      "via": "POST /method/video.get"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "download",
+      "via": "POST /method/video.getPlayerConfig"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Мессенджер",
+      "to": "auth",
+      "via": "POST /method/video.getStatsToken"
+    },
+    {
+      "confidence": 0.83,
+      "from": "click:Мессенджер",
+      "to": "other",
+      "via": "POST /method/vmoji.getAvatar"
+    },
+    {
+      "confidence": 0.87,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "comments, likes, profiles, groups",
+      "via": "POST /method/wall.get"
+    },
+    {
+      "confidence": 0.87,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "comments, likes, order, profiles, users, groups",
+      "via": "POST /method/wall.getCommentsForPosts"
+    },
+    {
+      "confidence": 0.91,
+      "from": "click:Мессенджер",
+      "to": "other",
+      "via": "POST /video.php"
+    },
+    {
+      "confidence": 0.7899999999999999,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "event",
+      "via": "POST /web-stats/p"
+    },
+    {
+      "confidence": 0.98,
+      "from": "route_change:/dvurechensky_pro",
+      "to": "other",
+      "via": "POST /wkview.php"
+    }
+  ],
+  "frontend_stack": [
+    "webpackChunkvk",
+    "webpackChunkvkweb",
+    "webpackChunkvkweb_legacy",
+    "Custom SPA Runtime",
+    "React",
+    "Webpack",
+    "Vite",
+    "mobx",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"Logo__icon--eLIzO vkuiIcon vkuiIcon--136 vkuiIcon--w-136 vkuiIcon--h-24 vkuiIcon--new_logo_vk_with_text\" width=\"136\" height=\"24\" viewBox=\"0 0 136 24\" fill=\"none\" style=\"width: 136px; height: 24px;\"><g clip-path=\"url(#new_logo_vk_with_text:rab:a)\"><g clip-path=\"url(#new_logo_vk_with_text:rab:b)\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M67 12.501C67 15.843 64.567 18 61.12 18s-5.88-2.157-5.88-5.499S57.672 7 61.12 7 67 9.16 67 12.501m-9.222 0c0 2.073 1.354 3.499 3.342 3.499s3.342-1.426 3.342-3.499S63.108 9.05 61.12 9.05s-3.342 1.378-3.342 3.451m-17.032-.211c.952-.445 1.565-1.185 1.565-2.327 0-1.734-1.586-2.961-3.87-2.961h-5.266V18h5.499c2.368 0 4.018-1.29 4.018-3.046a2.76 2.76 0 0 0-1.946-2.665m-5.14-3.279h2.835c.846 0 1.438.508 1.438 1.206s-.592 1.184-1.438 1.184h-2.834zm3.068 6.98h-3.067v-2.686h3.067c.951 0 1.586.55 1.586 1.353 0 .804-.635 1.333-1.586 1.333M51.836 18h3.194l-5.055-5.71 4.632-5.288h-2.898l-3.68 4.272h-.592V7.002h-2.432V18h2.432v-4.378h.592zm24.63-10.998v4.336h-4.928V7.002h-2.433V18h2.433v-4.441h4.927V18h2.433V7.002zM86.905 18h-2.432V9.223h-3.807V7.002h10.046v2.22h-3.807zm9.702-11c-2.136 0-4.018.89-4.568 2.794l2.242.38c.338-.676 1.1-1.254 2.2-1.254 1.332 0 2.115.895 2.22 2.333h-2.368c-3.236 0-4.844 1.417-4.844 3.448 0 2.051 1.587 3.299 3.828 3.299 1.798 0 3.004-.825 3.532-1.734L99.358 18h1.798v-6.176c0-3.193-1.735-4.824-4.547-4.824m-.719 9.16c-1.184 0-1.945-.613-1.945-1.565 0-.846.613-1.438 2.474-1.438h2.305c0 1.797-1.142 3.003-2.834 3.003M113.73 18h-3.194l-3.807-4.378h-.592V18h-2.432V7.002h2.432v4.272h.592l3.68-4.272h2.898l-4.632 5.288zm4.274 0h2.432V9.223h3.807V7.002h-10.046v2.22h3.807zm12.287-11c3.341 0 5.71 2.202 5.71 5.374 0 .296-.021.55-.042.783h-8.841c.233 1.692 1.459 2.834 3.321 2.834 1.29 0 2.305-.55 2.834-1.333l2.284.381c-.825 2.094-2.982 2.961-5.266 2.961-3.342 0-5.711-2.178-5.711-5.499S126.949 7 130.291 7m3.066 4.253C132.955 9.878 131.813 9 130.291 9c-1.481 0-2.623.836-3.025 2.253z\" clip-rule=\"evenodd\"></path><path fill=\"#07f\" d=\"M11.505 24h1c5.432 0 8.144 0 9.824-1.68C24 20.638 24 17.916 24 12.504v-1.01c0-5.412 0-8.124-1.67-9.814C20.648 0 17.927 0 12.504 0h-1C6.073 0 3.36 0 1.68 1.68 0 3.362 0 6.084 0 11.496v1.01c0 5.412 0 8.124 1.68 9.814C3.362 24 6.084 24 11.506 24\"></path><path fill=\"#fff\" d=\"M12.77 17.29c-5.47 0-8.59-3.75-8.72-9.99h2.74c.09 4.58 2.11 6.52 3.71 6.92V7.3h2.58v3.95c1.58-.17 3.24-1.97 3.8-3.95h2.58c-.43 2.44-2.23 4.24-3.51 4.98 1.28.6 3.33 2.17 4.11 5.01h-2.84c-.61-1.9-2.13-3.37-4.14-3.57v3.57z\"></path></g></g><defs><clipPath id=\"new_logo_vk_with_text:rab:a\"><path fill=\"#fff\" d=\"M.001 0h136v24h-136z\"></path></clipPath><clipPath id=\"new_logo_vk_with_text:rab:b\"><path fill=\"#fff\" d=\"M0-12h136v48H0z\"></path></clipPath></defs></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--search_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" style=\"width: 16px; height: 16px;\"><path fill=\"currentColor\" d=\"M6.5 1a5.5 5.5 0 0 1 4.384 8.823l3.895 3.9a.75.75 0 0 1-1.061 1.06l-3.895-3.9A5.5 5.5 0 1 1 6.5 1m0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--cancel_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path d=\"M7.536 6.264a.9.9 0 0 0-1.272 1.272L10.727 12l-4.463 4.464a.9.9 0 0 0 1.272 1.272L12 13.273l4.464 4.463a.9.9 0 1 0 1.272-1.272L13.273 12l4.463-4.464a.9.9 0 1 0-1.272-1.272L12 10.727z\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--notification_outline_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path d=\"M12.004 2.1c4.015 0 6.896 3.278 6.896 7.532v1.6c0 .228.193.531.72 1.075l.27.275c1.082 1.097 1.51 1.729 1.51 2.745 0 .445-.052.791-.268 1.206-.456.878-1.423 1.367-2.869 1.367l-1.912.001c-.629 2.332-2.13 3.6-4.351 3.6-2.245 0-3.754-1.295-4.371-3.675l.019.074H5.737c-1.488 0-2.466-.502-2.902-1.41-.191-.398-.235-.72-.235-1.163 0-1.016.428-1.648 1.51-2.745l.27-.275c.527-.544.72-.847.72-1.076v-1.6C5.1 5.38 7.988 2.1 12.004 2.1m2.462 15.802H9.534C9.99 19.148 10.776 19.7 12 19.7s2.01-.552 2.466-1.798M12.004 3.9C9.036 3.9 6.9 6.327 6.9 9.632v1.6c0 .852-.39 1.463-1.228 2.328-.073.075-.142.146-.281.286-.747.758-.991 1.118-.991 1.481 0 .192.014.292.057.382.107.224.433.391 1.28.391h12.526c.82 0 1.153-.169 1.272-.397.05-.095.065-.197.065-.376 0-.363-.244-.723-.99-1.48-.14-.141-.209-.212-.282-.287-.839-.865-1.228-1.476-1.228-2.329v-1.6c0-3.307-2.13-5.731-5.096-5.731\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--music_outline_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" style=\"width: 24px; height: 24px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M16.716 4.105c.61-.127 1.01-.21 1.317-.246.299-.036.408-.013.457.004a.9.9 0 0 1 .485.395c.026.043.07.146.097.446.027.304.028.705.028 1.314L8.9 8.143v-.54c0-.477 0-.786.018-1.024.017-.228.046-.328.073-.39a1.1 1.1 0 0 1 .374-.46c.055-.039.147-.088.366-.15.23-.067.533-.13 1-.227zM7.1 15.1h-.2c-1.795 0-3.125.452-4.02 1.215-.903.768-1.28 1.782-1.28 2.71A3.375 3.375 0 0 0 4.975 22.4c.928 0 1.942-.377 2.71-1.28.763-.895 1.215-2.225 1.215-4.02V9.982l10.2-2.125V13.1h-.2c-1.795 0-3.125.452-4.021 1.215-.902.768-1.279 1.782-1.279 2.71a3.375 3.375 0 0 0 3.375 3.375c.928 0 1.942-.377 2.71-1.28.763-.895 1.215-2.225 1.215-4.02V6.004c0-.573 0-1.061-.035-1.457-.036-.412-.116-.824-.34-1.204a2.7 2.7 0 0 0-1.457-1.185c-.417-.141-.836-.135-1.247-.087-.395.047-.873.147-1.434.264l-.038.007-5.985 1.247-.03.007c-.429.089-.797.166-1.099.252-.32.092-.624.21-.908.41a2.9 2.9 0 0 0-.987 1.214c-.139.32-.192.642-.217.974-.023.313-.023.689-.023 1.126v.031zm8.946.585c-.473.403-.646.901-.646 1.34 0 .87.705 1.575 1.575 1.575.439 0 .937-.173 1.34-.646.408-.479.785-1.349.785-2.854v-.2h-.2c-1.505 0-2.375.377-2.854.785M3.4 19.025c0-.439.173-.937.646-1.34.479-.408 1.349-.785 2.854-.785h.2v.2c0 1.505-.377 2.375-.785 2.854-.403.473-.901.646-1.34.646-.87 0-1.575-.705-1.575-1.575\" clip-rule=\"evenodd\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconTertiary--G7FAa vkuiIcon vkuiIcon--12 vkuiIcon--w-12 vkuiIcon--h-8 vkuiIcon--dropdown_12\" width=\"12\" height=\"8\" viewBox=\"0 0 12 8\" fill=\"none\" style=\"width: 12px; height: 8px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2.156 2.295a.75.75 0 0 1 1.051-.137L6 4.306l2.793-2.148a.75.75 0 1 1 .914 1.189l-3.25 2.5a.75.75 0 0 1-.914 0l-3.25-2.5a.75.75 0 0 1-.137-1.052\" clip-rule=\"evenodd\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--settings_24\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" style=\"width: 16px; height: 16px;\"><g fill=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0h24v24H0z\"></path><path fill=\"currentColor\" d=\"M9.127 5.052c1.256-.72 1.473-1.469 1.623-2.219.167-.833.417-.833.833-.833h.834c.416 0 .583 0 .833.833.225.751.383 1.502 1.631 2.223 1.397.379 2.08.002 2.717-.422.707-.471.884-.294 1.178 0l.59.59c.294.294.412.412 0 1.178-.372.69-.791 1.333-.418 2.725.72 1.256 1.469 1.473 2.219 1.623.833.167.833.417.833.833v.834c0 .416 0 .583-.833.833-.751.225-1.502.383-2.223 1.631-.379 1.397-.002 2.08.422 2.717.471.707.294.884 0 1.178l-.59.59c-.294.294-.412.412-1.178 0-.69-.372-1.333-.791-2.725-.418-1.256.72-1.473 1.469-1.623 2.219-.167.833-.417.833-.833.833h-.834c-.416 0-.583 0-.833-.833-.225-.751-.383-1.502-1.631-2.223-1.397-.379-2.08-.002-2.717.422-.707.471-.884.294-1.178 0l-.59-.59c-.294-.294-.412-.412 0-1.178.372-.69.791-1.333.418-2.725-.72-1.256-1.469-1.473-2.219-1.623C2 13.083 2 12.833 2 12.417v-.834c0-.416 0-.583.833-.833.751-.225 1.502-.383 2.223-1.631.379-1.397.002-2.08-.422-2.717-.471-.707-.294-.884 0-1.178l.59-.59c.294-.294.412-.412 1.178 0 .69.372 1.333.791 2.725.418M12 16.75a4.75 4.75 0 1 0 0-9.5 4.75 4.75 0 0 0 0 9.5\"></path></g></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--12 vkuiIcon--w-12 vkuiIcon--h-12 vkuiIcon--chevron_down_small_12\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"currentColor\" style=\"width: 12px; height: 12px;\"><path fill-rule=\"evenodd\" d=\"M3.202 4.736a.754.754 0 0 1 1.06-.036L6 6.31 7.738 4.7a.754.754 0 0 1 1.06.036.74.74 0 0 1-.036 1.052L6.648 7.746a.955.955 0 0 1-1.296 0L3.238 5.788a.74.74 0 0 1-.036-1.052\" clip-rule=\"evenodd\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-12 vkuiIcon--h-16 vkuiIcon--chevron_16\" width=\"12\" height=\"16\" viewBox=\"0 0 12 16\" fill=\"none\" style=\"width: 12px; height: 16px;\"><path fill=\"currentColor\" d=\"M7.227 8 3.864 4.636a.9.9 0 0 1 1.272-1.272l4 4a.9.9 0 0 1 0 1.272l-4 4a.9.9 0 0 1-1.272-1.272z\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkitgetColorClass__colorIconSecondary--U2BHx vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--filter_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" data-testid=\"friends_search_filters\" aria-expanded=\"false\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path fill-rule=\"evenodd\" d=\"M6.242 8.9a2.901 2.901 0 0 0 5.516 0H20a.9.9 0 1 0 0-1.8h-8.242a2.901 2.901 0 0 0-5.515 0H4a.9.9 0 1 0 0 1.8zM9 6.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2M3.1 16a.9.9 0 0 1 .9-.9h8.242a2.901 2.901 0 0 1 5.516 0H20a.9.9 0 1 1 0 1.8h-2.242a2.901 2.901 0 0 1-5.516 0H4a.9.9 0 0 1-.9-.9m10.8 0a1.1 1.1 0 1 1 2.2 0 1.1 1.1 0 0 1-2.2 0\" clip-rule=\"evenodd\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--message_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" style=\"width: 16px; height: 16px;\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M5.627 13.231a8 8 0 0 0 2.385.36c3.769 0 6.988-2.623 6.988-6.045S11.78 1.5 8.012 1.5c-3.77 0-6.989 2.624-6.989 6.046a5.4 5.4 0 0 0 .98 3.084c-.052.735-.431 1.564-.778 2.323l-.148.324c-.266.59.193 1.247.83 1.222 1.563-.06 2.84-.453 3.72-1.268m-.382-1.692.83.26a6.5 6.5 0 0 0 1.937.293c3.18 0 5.488-2.173 5.488-4.546S11.191 3 8.012 3 2.524 5.172 2.524 7.546a3.9 3.9 0 0 0 .712 2.231l.299.433-.036.523c-.045.647-.246 1.266-.442 1.767a13 13 0 0 1-.16.39c.79-.146 1.341-.417 1.71-.759z\" clip-rule=\"evenodd\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--16 vkuiIcon--w-16 vkuiIcon--h-16 vkuiIcon--phone_outline_16\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"currentColor\" style=\"width: 16px; height: 16px;\"><path d=\"m9.21 9.862-.42.42a.41.41 0 0 1-.428.094q-.626-.23-1.565-1.17-.94-.937-1.169-1.564a.41.41 0 0 1 .094-.428l.42-.42c.773-.774.844-1.992.162-2.801l-.492-.586c-.562-.668-1.574-.736-2.262-.15a1.9 1.9 0 0 0-.647 1.254q-.377 2.805 2.703 5.887 3.082 3.083 5.886 2.705a1.9 1.9 0 0 0 1.254-.648c.585-.687.517-1.7-.15-2.263l-.586-.493c-.81-.68-2.027-.61-2.8.164ZM7.604 8.4c.299.299.56.526.77.68 1.214-1.213 3.101-1.323 4.371-.255l.585.493c1.16.976 1.275 2.715.28 3.884a3 3 0 0 1-1.967 1.033c-2.274.307-4.562-.745-6.845-3.029-2.284-2.284-3.335-4.573-3.034-6.797A3 3 0 0 1 2.81 2.384c1.164-.99 2.901-.873 3.876.287l.492.584c1.07 1.269.96 3.158-.229 4.347.13.236.356.497.656.797Z\"></path></svg>",
+    "<svg aria-hidden=\"true\" display=\"block\" class=\"vkuiIcon vkuiIcon--24 vkuiIcon--w-24 vkuiIcon--h-24 vkuiIcon--more_horizontal_24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" style=\"width: 24px; height: 24px;\"><path d=\"M18 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m-6 4c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m-6 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2\"></path></svg>",
+    "window.vk = {\n            __domain: 'vk.com',\n            loginDomain: 'https://login.vk.com/',\n            apiConfigDomains: {\n              domain: 'vk.com',\n              apiDomain: 'api.vk.com',\n              loginDomain: 'login.vk.com',\n              connectDomain: 'id.vk.com',\n            },\n            logoutUrl: 'https://login.vk.com/?act=logout&hash=eac6464300223a78c0&_origin=https%3A%2F%2Fvk.com&lrt=BDpxh3TFcr2KJa2-sb_NXAJWrhHOz5-cP5JdDlK-r4k',\n            id: 121364353,\n            balance: 0,\n            al: 3,\n            lang: 0,\n            isCyrillic: true,\n            isSSGRoute: true,\n            pabs: 124,\n            pe: {\"ads_legacy_routes\":1,\"ads_market_autopromotion_bookmarks_stats\":1,\"apps_show_app_slides_sheet_no_extra_closes\":1,\"audio_recoms_onboarding_entry_points\":1,\"audio_special_project_web\":1,\"audio_studio_ads_block_enabled\":1,\"avatar_component_refactor_web\":1,\"avoid_multiple_init\":1,\"await_spa_module\":1,\"beauty_wizard_redesign\":1,\"beauty_wizard_spa\":1,\"bugs_tariff_interface\":1,\"challenge_ajax_requests\":1,\"claim_fz149\":1,\"clips_fix_autoplay_legacy\":1,\"clips_web_spa_backend\":1,\"collect_ttlb\":1,\"community_authors_onboarding\":1,\"core_spa_blocking\":1,\"devadmin_splash_screen_go_uploader\":1,\"disable_push_equal_history_location\":1,\"enable_feature_toggles\":1,\"extended_static_loading_errors\":1,\"fav_dialog_with_yourself\":1,\"feed_action_button_compact_style_fix\":1,\"feed_ads_cta_secondary_link_support_web\":1,\"feed_attachemnts_fix_aspect_ratio\":1,\"feed_csrf_hash_support_web\":1,\"feed_filter_photos_sizes_wide_enough\":1,\"feed_fix_cirillic_ad_host_name\":1,\"feed_fix_empty_apply_options\":1,\"feed_fix_get_owner_console_error\":1,\"feed_fix_render_new_post\":1,\"feed_grid_photo_padding_fix\":1,\"feed_open_audio_stats_for_react\":1,\"feed_photo_market_tags\":1,\"feed_photo_market_tags_in_grid\":1,\"feed_photo_market_tags_link_wrapper\":1,\"feed_post_action_button_with_underline\":1,\"feed_post_text_persist_lines_count_on_hide\":1,\"feed_post_video_in_carousel_control...[truncated 51312 chars]",
+    ";try{(function(){\"use strict\";function e(e){const t=undefined;return(new DOMParser).parseFromString(e,\"text/html\").documentElement.textContent}function t(t){for(const n in t)if(t.hasOwnProperty(n)){const o=e(t[n]);document.body.hasAttribute(n)&&\"class\"===n?document.body.setAttribute(n,document.body.getAttribute(n)+\" \"+o):document.body.setAttribute(n,o)}}function n(e){const t=document.getElementById(e);if(!t||\"TEMPLATE\"!==t.tagName)return console.warn(\"Previous element is not <template>\"),void 0;document.head.appendChild(t.content),document.currentScript.remove(),t.remove()}function o(){if(window.ajax){window.__eagerRequestsPromises__=window.__eagerRequestsPromises__??{};for(let[e,[t,n]]of Object.entries(window.__eagerRequests__??{}))window.__eagerRequestsPromises__[e]=window.ajax.promisifiedPost(t,n),delete window.__eagerRequests__[e]}}function s(){window.FlushController={moveTemplateElementToHead:n,addBodyAttributes:t,fetchEagerRequests:o}}function i(){function e(e){const t={isReady:!1,onReadyCallbacks:[]};window[`on${e[0].toUpperCase()}${e.slice(1)}`]=e=>{t.isReady?e():t.onReadyCallbacks.push(e)},window[e]=()=>{if(!t.isReady){t.isReady=!0,window.dispatchEvent(new CustomEvent(e));for(let e of t.onReadyCallbacks)e();t.onReadyCallbacks=[]}}}e(\"spaReady\"),e(\"layoutReady\"),e(\"loaderNavReady\"),s()}return i})()({});} catch (e) {e.__inline_tag = \"spaReady.js\"; e.name = `[spaReady.js] ${e.name}`; throw e;};",
+    ";try{(function(){\"use strict\";const e=\"static-loading-initial-issues\",t=\"cur-ready\",n=\"static-loading-initial-issues-send\",o=e=>{const t=!e.type||\"Error\"===e.type;return{source:e.source??\"unknown\",type:t?\"UnknownType\":e.type,effectiveType:window.navigator?.connection?.effectiveType??\"unknown\"}},r=t=>{window.isStaticLoadingInitialError=!0;const n=[...JSON.parse(window.localStorage.getItem(e)??\"[]\"),o(t)];window.localStorage.setItem(e,JSON.stringify(n))},i=()=>{const e=e=>{r({source:e.filename,type:e?.error?.constructor?.name})};return window.addEventListener(\"error\",e),()=>{window.removeEventListener(\"error\",e)}},s=()=>{const e=\"static-loading-initial-issues-onerror\",t=e=>{const t=e.detail.srcElement?.attributes?.getNamedItem(\"src\")?.nodeValue;r({source:t,type:\"NetworkError\"})};return window.addEventListener(e,t),()=>{window.removeEventListener(e,t)}};function c(){window.localStorage.removeItem(e);const o=[i,s],r=[];for(const e of o)r.push(e());window.addEventListener(t,(()=>{for(const e of r)e();window.dispatchEvent(new CustomEvent(n))}))}return c})()({\"mechanismRuntimeErrors\":true,\"mechanismNetworkOnError\":true});} catch (e) {e.__inline_tag = \"staticLoadingInitialIssues.js\"; e.name = `[staticLoadingInitialIssues.js] ${e.name}`; throw e;};",
+    "window.langConfig = {\"id\":0,\"locale\":\"ru\",\"numDel\":\"<span class=\\\"num_delim\\\"> <\\/span>\",\"numDelS\":\" \",\"numDec\":\",\",\"prepTags\":[\"{prep_with}\",\"{prep_With}\",\"{prep_about}\",\"{prep_About}\",\"{prep_into}\",\"{prep_Into}\"],\"prep\":[[\"{prep_with},{prep_With}\",\"С*,З*,Льв*\",\"со,Со\"],[\"{prep_with},{prep_With}\",\"*,Са*,Се*,Сё*,Си*,Со*,Су*,Сэ*,Сю*,Ся*,За*,Зе*,Зё*,Зи*,Зо*,Зу*,Зэ*,Зю*,Зя*\",\"с,С\"],[\"{prep_about},{prep_About}\",\"А*,О*,У*,И*,Э*\",\"об,Об\"],[\"{prep_about},{prep_About}\",\"*\",\"о,О\"],[\"{prep_into},{prep_Into}\",\"В*,Ф*,Льв*\",\"во,Во\"],[\"{prep_into},{prep_Into}\",\"*,Ва*,Ве*,Вё*,Ви*,Во*,Ву*,Вэ*,Вю*,Вя*,Фа*,Фе*,Фё*,Фи*,Фо*,Фу*,Фэ*,Фю*,Фя*\",\"в,В\"]],\"parent\":0,\"timeSys\":[\"24hour\"],\"yearOffset\":0,\"flexLast\":false,\"revOrder\":false,\"RTL\":false,\"numRules\":{\"int\":[[100,[11,12,13,14],3],[10,[1],1],[10,[2,3,4],2],[\"*\",0,3]],\"float\":2},\"sexRules\":[[1,2],[\"*\",1]],\"larr\":\"&larr;\",\"rarr\":\"&rarr;\"}; window.larr = langConfig.larr; window.rarr = langConfig.rarr;",
+    "https://st1-54.vk.com/dist/core_spa/error_monitoring.isolated.ba2231ec.js",
+    "https://st1-54.vk.com/dist/core_spa/core_spa_vk.db5c1bc7.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/71559.97d43506.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/11395.9ad1a066.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/98715.fd6b1680.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/99758.6d4f8678.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/24814.65ca156f.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/96725.fc728563.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/49849.fda27a54.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/80681.f362359d.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/51220.19d8a9c9.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/35250.935cea31.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/25901.31b26401.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/25426.c45d6020.js",
+    "https://st1-54.vk.com/dist/core_spa/chunks/62727.a034d6c4.js"
+  ],
+  "modules": [
+    {
+      "name": "BodySize",
+      "score": 0.99,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "XF7wnLwYJj11L",
+      "score": 0.99,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "AudioEventNotifier",
+      "score": 0.99,
+      "sources": [
+        "telemetry",
+        "assets"
+      ]
+    },
+    {
+      "name": "Groups",
+      "score": 0.98,
+      "sources": [
+        "telemetry",
+        "routes",
+        "assets"
+      ]
+    },
+    {
+      "name": "B5d6H7nKgmqPMHnLp5DE9pSWT6tlYEDmDtAU2Uo9ipa",
+      "score": 0.97,
+      "sources": [
+        "telemetry",
+        "network"
+      ]
+    },
+    {
+      "name": "StatsToken",
+      "score": 0.81,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "ProfileActionDropdown",
+      "score": 0.77,
+      "sources": [
+        "network",
+        "assets"
+      ]
+    },
+    {
+      "name": "ViewStats",
+      "score": 0.76,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "PerfStats",
+      "score": 0.76,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "MainStats",
+      "score": 0.76,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "ResStats",
+      "score": 0.76,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "SiteLayout",
+      "score": 0.72,
+      "sources": [
+        "telemetry",
+        "assets"
+      ]
+    },
+    {
+      "name": "Feed",
+      "score": 0.67,
+      "sources": [
+        "telemetry",
+        "routes"
+      ]
+    },
+    {
+      "name": "Search",
+      "score": 0.67,
+      "sources": [
+        "telemetry",
+        "routes"
+      ]
+    },
+    {
+      "name": "Profile",
+      "score": 0.67,
+      "sources": [
+        "telemetry",
+        "routes"
+      ]
+    },
+    {
+      "name": "Auth",
+      "score": 0.67,
+      "sources": [
+        "telemetry",
+        "routes"
+      ]
+    },
+    {
+      "name": "WebDI",
+      "score": 0.67,
+      "sources": [
+        "network",
+        "assets"
+      ]
+    },
+    {
+      "name": "MiniAppsLifecycle",
+      "score": 0.67,
+      "sources": [
+        "network",
+        "assets"
+      ]
+    },
+    {
+      "name": "ZrMekF8LJ5BwFqzlMY86GylDSEZVZ0gh",
+      "score": 0.66,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "JWEVhvWFR9egshCfAbUAr5EGqIJ45ny",
+      "score": 0.66,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "ZGJE",
+      "score": 0.66,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "IdleTabStats",
+      "score": 0.61,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "KaYjiCqZVOom83OpfrcvTLoKvJ8pGjqNI4iKCRGbfwzHLFM",
+      "score": 0.56,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "DKO1mJOk",
+      "score": 0.56,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "XMLHttpRequest",
+      "score": 0.56,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "W2nODYTcwrLazbL5mZ2qgHbOxxE84Zw71Z9z55gPJiD",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "WindowHeight",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "TopSearch",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "DocumentClick",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "WindowWidth",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "MECommonContext",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "GZIP",
+      "score": 0.51,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "CommunityPage",
+      "score": 0.51,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "CallsWidget",
+      "score": 0.51,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "IZhyMVi9LLyUVqwXsoX6OPfRca7GtLEGGzXcUkAa48",
+      "score": 0.51,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "pageCommunityPage",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "searchTopNew",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "audioLayerEntry",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "leftMenuGroupsOnboarding",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "webCallsWidget",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "audioConfigLegacy",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "audioConfigOverrides",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "onboarding",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "stickersPopupTqHandlers",
+      "score": 0.51,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "VKCallsSDKLogs",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "KeywordsData",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "LongView",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "SaveTimer",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "PageID",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "S7I8voPncJ1fg4ETp618AWkinW",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "Aj3waBI6m",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "PevyyWze8SZLVcdipHlYIGf85mWxtW5kEdzo",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "UfA8JtJTe187HrzZ0F16Ldw9wJmtLlYzDFLv9yS8v8H",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "TopMenu",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "SideTopLink",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "VideoPlayerService",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "LastInlined",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "VideoInitializer",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "ScrollTop",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "VideoPlaylist",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "LastNav",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "NativeScrollbarWidth",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "MotionKit",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "FounderLogger",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "FounderApi",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "VKLIVESDKVERSION",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "VKLIVESDKEE",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "StickerPickerViewer",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "StickerUrls",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "GroupsOnboarding",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "DocumentTitle",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "CZF9B3bYdIPAQfeFJ6PPZXLmLJ5hIRZ9zVDAucB8sjg",
+      "score": 0.46,
+      "sources": [
+        "telemetry"
+      ]
+    },
+    {
+      "name": "BDpxh3TFcr2KJa2",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "NXAJWrhHOz5",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "P5JdDlK",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "OriginRoutes",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "Payments",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "Friends",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "Notifications",
+      "score": 0.46,
+      "sources": [
+        "routes"
+      ]
+    },
+    {
+      "name": "EVAAudioPlayer",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "VKSansDisplayDemiBoldFaux",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "VKSansDisplayMediumLatin",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "VKSansDisplayMediumCyrillic",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "VKSansDisplayDemiBoldLatin",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "VKSansDisplayDemiBoldCyrillic",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "PlayerImpl",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "AdvertisingBannerViewModelProvider",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "MediaAttachmentPlayer",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "ProfileNavigationInfo",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "E13F5",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "E18AE4",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "F0F056",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "GCxNgd61v9Q6gQOvvUoTbuvCN",
+      "score": 0.46,
+      "sources": [
+        "network"
+      ]
+    },
+    {
+      "name": "ChunkLoadingGlobal",
+      "score": 0.46,
+      "sources": [
+        "globals"
+      ]
+    },
+    {
+      "name": "lang02",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "loaderNav213127828230",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "errorMonitoring.isolated",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "coreSpaVk",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "audioEVAAudioPlayer",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    },
+    {
+      "name": "code",
+      "score": 0.46,
+      "sources": [
+        "assets"
+      ]
+    }
+  ],
+  "routing": [
+    "https://vk.com/friends?section=all",
+    "/friends",
+    "?section=all",
+    "https://vk.com/feed",
+    "https://vk.com/feed?section=notifications",
+    "Уведомления",
+    "https://vk.com/dvurechensky_pro",
+    "Настройки профиля",
+    "Профиль",
+    "Лента",
+    "https://vk.com/im",
+    "Мессенджер",
+    "https://vk.com/calls",
+    "Звонки",
+    "Друзья 169",
+    "https://vk.com/friends?section=requests",
+    "169",
+    "https://vk.com/groups",
+    "Сообщества 198",
+    "https://vk.com/audios121364353",
+    "Музыка",
+    "https://vkvideo.ru/",
+    "Видео",
+    "_blank",
+    "https://vk.com/games?act=catalog&ref=left_menu",
+    "Игры",
+    "https://vk.com/market?utm_ref=left_menu",
+    "Маркет",
+    "https://vk.com/settings?act=payments&ref=left_menu",
+    "Голоса",
+    "https://vk.com/docs",
+    "Файлы",
+    "https://vk.com/support?act=home&source=menu",
+    "Помощь",
+    "https://vk.com/lizerium_game",
+    "Freelancer Lizerium (Mod an..",
+    "https://vk.com/blog",
+    "Блог",
+    "https://dev.vk.com/",
+    "Разработчикам",
+    "https://ads.vk.com/promo/firstbonus?utm_source=vk_left_menu_for_business&utm_medium=link",
+    "Для бизнеса",
+    "https://vk.com/vk_authors",
+    "Авторам",
+    "https://vk.com/id373448023",
+    "Виктор Петровський",
+    "https://vk.com/id396741923",
+    "Рома Михайлов",
+    "https://vk.com/id391491721",
+    "Стас Вильготский",
+    "https://vk.com/friends?act=find",
+    "Найти друзей",
+    "https://vk.com/psiholog_lip",
+    "Ольга Юдина",
+    "https://vk.com/club129377475",
+    "Психолог по отношениям • Ольга Юдина",
+    "https://vk.com/write169910140",
+    "Написать сообщение",
+    "https://vk.com/id353459024",
+    "Олег Борин",
+    "https://vk.com/write353459024",
+    "https://vk.com/ceaselessdischarge"
+  ],
+  "site_type": "Commerce / Marketplace",
+  "state_management": [
+    "oncontentvisibilityautostatechange",
+    "oncontextrestored",
+    "onpopstate",
+    "cookieStore",
+    "__mobxInstanceCount",
+    "__mobxGlobals",
+    "storePasswordCredential",
+    "__SiteSnapshotterV3State__",
+    "no-store",
+    "response.items.state",
+    "{\"response\":{\"config\":{\"core\":{\"androidPreferredFormat\":\"dash\",\"autoTrackSelection\":{\"bitrateFactorAtEmptyBuffer\":2.8,\"bitrateFactorAtFullBuffer\":2,\"trackCooldownDecreaseQuality\":3000,\"trackCooldownIncreaseQuality\":15000},\"chromecastPresentationApi\":true,\"chromecastReceiverId\":\"07A4434E\",\"clearVideoElementInnerHTML\":true,\"collectingDecodingInfoEnabled\":true,\"configName\":[\"use_dynamic_bitrate\"],\"dash\":{\"ignoreNetworkErrorsOnLoadInit\":true,\"qualityLimitsOnStall\":{\"resetQualityRestrictionTimeout\":10000,\"stallCountBeforeQualityDecrease\":3,\"stallDurationNoDataBeforeQualityDecrease\":500},\"rejectOnSourceOpenTimeout\":true,\"sourceOpenTimeout\":3000,\"useNewAbr\":true},\"devNullLogEnabled\":true,\"keepVideoElement\":true,\"maxPlaybackTransitionInterval\":10000,\"preferHDR\":true,\"preferMultiStream\":true,\"stallsManager\":{\"enabled\":false},\"useHlsJs\":false,\"useManagedMediaSource\":true,\"useNewAutoSelectVideoTrack\":true,\"useSafariEndlessRequestBugfix\":true,\"webmCodec\":\"av1\"},\"meta\":[\"feature.collecting_codecs\",\"feature.disable_pip_resize_handling\",\"feature.hide_thumb_then_autoplay_enabled\",\"feature.keep_video_element\",\"feature.mobile_vk_logo_view_on_bottom_controls\",\"feature.playback_status_animation\",\"feature.save_preferred_states_on_user_action_only\",\"feature.slow_video_notificiation\",\"feature.use_dynamic_bitrate\",\"module.web\",\"feature.chromecast_presentation_api.module.web\"],\"statistics\":{\"apiEnv\":\"okcdn\",\"embedUrlParams\":[\"partner_name\"],\"watchCoverageInterval\":30000,\"watchCoverageTimeoutFix\":true},\"ui\":{\"ads\":{\"isVsidOriginal\":true},\"configName\":[\"slow_video_notification\"],\"devNullLog\":true,\"disablePiPResizeHandling\":true,\"downloadVKLanguages\":false,\"episodeMinWidthPc\":0,\"features\":{\"additionalButtons\":true,\"annotations\":true,\"annotationsInside\":true,\"audioLanguages\":true,\"disableThumbUnstartedOnAutoplay\":true,\"dpip\":false,\"endScreen\":false,\"episodesClustering\":false,\"forceAutoQualityWhenSevereStallHappens\":false,\"forcePlayerDisplayBlock\":true,\"fullscreenInternalTargetPlayerContainer\":true,\"interactiveAreaControlShadow\":true,\"interac...[truncated 951 chars]",
+    "pushState",
+    "replaceState",
+    "function pushState() { [native code] }",
+    "function replaceState() { [native code] }",
+    "function (event) {\n        var entry = { area: \"storage_event\", key: event.key, oldValue: maskValue(event.key, event.oldValue, config.valuePreviewLimit), newValue: maskValue(event.key, event.newValue, config.valuePreviewLimit), url: event.url, timestamp: now(), t: sessionT() };\n        state.storageEvents.push(entry);\n        if (SENSITIVE_RE.test(event.key || \"\")) state.authChanges.push(entry);\n        addTimeline(\"storage_change:\" + event.key, { key: event.key });\n      }",
+    "ecommInitialState",
+    "window.oncontentvisibilityautostatechange",
+    "window.oncontextrestored",
+    "window.onpopstate",
+    "window.cookieStore",
+    "mobx",
+    "window.__mobxInstanceCount",
+    "window.__mobxGlobals",
+    "mobxGuid",
+    "allowStateChanges",
+    "allowStateReads",
+    "window.storePasswordCredential",
+    "window.__SiteSnapshotterV3State__",
+    "window.ecommInitialState"
+  ]
+}

@@ -1,0 +1,3290 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SiteReconstructor Media API",
+    "version": "0.1.0",
+    "description": "Swagger 2.0 compatibility export generated from authorized passive capture evidence."
+  },
+  "host": "vk.com",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/",
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/al_video.php": {
+      "post": {
+        "tags": [
+          "Chat",
+          "Media"
+        ],
+        "summary": "POST /al_video.php",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: auth likely. Confidence: 91%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "langVersion": {
+                  "type": "string"
+                },
+                "loaderVersion": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "statsMeta": {
+                  "type": "object",
+                  "properties": {
+                    "hash": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    },
+                    "platform": {
+                      "type": "string"
+                    },
+                    "reloadVersion": {
+                      "type": "number"
+                    },
+                    "st": {
+                      "type": "boolean"
+                    },
+                    "time": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "vkEnv": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.91,
+          "server_kind": "media",
+          "category": "chat",
+          "source_url": "/al_video.php",
+          "draft": true
+        }
+      }
+    },
+    "/method/video.get": {
+      "post": {
+        "tags": [
+          "Download",
+          "Media"
+        ],
+        "summary": "POST /method/video.get",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: auth likely. Confidence: 83%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "number"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "added": {
+                            "type": "number"
+                          },
+                          "can_add": {
+                            "type": "number"
+                          },
+                          "can_add_to_faves": {
+                            "type": "number"
+                          },
+                          "can_attach_link": {
+                            "type": "number"
+                          },
+                          "can_comment": {
+                            "type": "number"
+                          },
+                          "can_delete": {
+                            "type": "number"
+                          },
+                          "can_dislike": {
+                            "type": "number"
+                          },
+                          "can_download": {
+                            "type": "number"
+                          },
+                          "can_edit": {
+                            "type": "number"
+                          },
+                          "can_edit_privacy": {
+                            "type": "number"
+                          },
+                          "can_like": {
+                            "type": "number"
+                          },
+                          "can_play_in_background": {
+                            "type": "number"
+                          },
+                          "can_repost": {
+                            "type": "number"
+                          },
+                          "comments": {
+                            "type": "number"
+                          },
+                          "date": {
+                            "type": "number"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "direct_url": {
+                            "type": "string"
+                          },
+                          "download": {
+                            "type": "object",
+                            "properties": {
+                              "can_download_for_offline_view": {
+                                "type": "boolean"
+                              },
+                              "can_download_to_device": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "duration": {
+                            "type": "number"
+                          },
+                          "files": {
+                            "type": "object",
+                            "properties": {
+                              "dash_sep": {
+                                "type": "string"
+                              },
+                              "failover_host": {
+                                "type": "string"
+                              },
+                              "hls": {
+                                "type": "string"
+                              },
+                              "hls_fmp4": {
+                                "type": "string"
+                              },
+                              "mp4_1080": {
+                                "type": "string"
+                              },
+                              "mp4_144": {
+                                "type": "string"
+                              },
+                              "mp4_1440": {
+                                "type": "string"
+                              },
+                              "mp4_2160": {
+                                "type": "string"
+                              },
+                              "mp4_240": {
+                                "type": "string"
+                              },
+                              "mp4_360": {
+                                "type": "string"
+                              },
+                              "mp4_480": {
+                                "type": "string"
+                              },
+                              "mp4_720": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "first_frame": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "height": {
+                                  "type": "number"
+                                },
+                                "url": {
+                                  "type": "string"
+                                },
+                                "width": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          },
+                          "height": {
+                            "type": "number"
+                          },
+                          "id": {
+                            "type": "number"
+                          },
+                          "image": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "height": {
+                                  "type": "number"
+                                },
+                                "url": {
+                                  "type": "string"
+                                },
+                                "width": {
+                                  "type": "number"
+                                },
+                                "with_padding": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          },
+                          "is_author": {
+                            "type": "boolean"
+                          },
+                          "likes": {
+                            "type": "object",
+                            "properties": {
+                              "count": {
+                                "type": "number"
+                              },
+                              "user_likes": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "local_views": {
+                            "type": "number"
+                          },
+                          "need_mediascope_stat": {
+                            "type": "boolean"
+                          },
+                          "ov_id": {
+                            "type": "string"
+                          },
+                          "ov_provider_id": {
+                            "type": "number"
+                          },
+                          "owner_id": {
+                            "type": "number"
+                          },
+                          "player": {
+                            "type": "string"
+                          },
+                          "privacy_comment": {
+                            "type": "object",
+                            "properties": {
+                              "category": {
+                                "type": "string"
+                              },
+                              "excluded_category": {
+                                "type": "string"
+                              },
+                              "is_enabled": {
+                                "type": "boolean"
+                              },
+                              "owners": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          },
+                          "privacy_view": {
+                            "type": "object",
+                            "properties": {
+                              "category": {
+                                "type": "string"
+                              },
+                              "excluded_category": {
+                                "type": "string"
+                              },
+                              "is_enabled": {
+                                "type": "boolean"
+                              },
+                              "owners": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          },
+                          "reposts": {
+                            "type": "object",
+                            "properties": {
+                              "count": {
+                                "type": "number"
+                              },
+                              "mail_count": {
+                                "type": "number"
+                              },
+                              "wall_count": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "response_type": {
+                            "type": "string"
+                          },
+                          "share_url": {
+                            "type": "string"
+                          },
+                          "stats_pixels": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "event": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "timeline_thumbs": {
+                            "type": "object",
+                            "properties": {
+                              "count_per_image": {
+                                "type": "number"
+                              },
+                              "count_per_row": {
+                                "type": "number"
+                              },
+                              "count_total": {
+                                "type": "number"
+                              },
+                              "frame_height": {
+                                "type": "number"
+                              },
+                              "frame_width": {
+                                "type": "number"
+                              },
+                              "frequency": {
+                                "type": "number"
+                              },
+                              "is_uv": {
+                                "type": "boolean"
+                              },
+                              "links": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "track_code": {
+                            "type": "string"
+                          },
+                          "tracking_info": {
+                            "type": "object",
+                            "properties": {
+                              "navigation": {
+                                "type": "object",
+                                "properties": {
+                                  "source_block": {
+                                    "type": "string"
+                                  },
+                                  "source_prev_screen": {
+                                    "type": "string"
+                                  },
+                                  "source_screen": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "recom_info": {
+                                "type": "object",
+                                "properties": {
+                                  "feature_sampling_uuid": {
+                                    "type": "string"
+                                  },
+                                  "recom_sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "search_info": {
+                                "type": "object",
+                                "properties": {
+                                  "search_query_id": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "views": {
+                            "type": "number"
+                          },
+                          "wall_post_id": {
+                            "type": "number"
+                          },
+                          "width": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "max_attached_short_videos": {
+                      "type": "number"
+                    },
+                    "profiles": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "can_access_closed": {
+                            "type": "boolean"
+                          },
+                          "first_name": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "number"
+                          },
+                          "is_closed": {
+                            "type": "boolean"
+                          },
+                          "last_name": {
+                            "type": "string"
+                          },
+                          "online": {
+                            "type": "number"
+                          },
+                          "online_app": {
+                            "type": "number"
+                          },
+                          "online_info": {
+                            "type": "object",
+                            "properties": {
+                              "app_id": {
+                                "type": "number"
+                              },
+                              "is_mobile": {
+                                "type": "boolean"
+                              },
+                              "is_online": {
+                                "type": "boolean"
+                              },
+                              "last_seen": {
+                                "type": "number"
+                              },
+                              "visible": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "photo_100": {
+                            "type": "string"
+                          },
+                          "photo_50": {
+                            "type": "string"
+                          },
+                          "photo_base": {
+                            "type": "string"
+                          },
+                          "screen_name": {
+                            "type": "string"
+                          },
+                          "sex": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "media",
+          "category": "download",
+          "source_url": "/method/video.get",
+          "draft": true
+        }
+      }
+    },
+    "/method/video.getPlayerConfig": {
+      "post": {
+        "tags": [
+          "Download",
+          "Media"
+        ],
+        "summary": "POST /method/video.getPlayerConfig",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: cookie/session. Confidence: 82%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "config": {
+                      "type": "object",
+                      "properties": {
+                        "core": {
+                          "type": "object",
+                          "properties": {
+                            "androidPreferredFormat": {
+                              "type": "string"
+                            },
+                            "autoTrackSelection": {
+                              "type": "object",
+                              "properties": {
+                                "bitrateFactorAtEmptyBuffer": {
+                                  "type": "number"
+                                },
+                                "bitrateFactorAtFullBuffer": {
+                                  "type": "number"
+                                },
+                                "trackCooldownDecreaseQuality": {
+                                  "type": "number"
+                                },
+                                "trackCooldownIncreaseQuality": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "chromecastPresentationApi": {
+                              "type": "boolean"
+                            },
+                            "chromecastReceiverId": {
+                              "type": "string"
+                            },
+                            "clearVideoElementInnerHTML": {
+                              "type": "boolean"
+                            },
+                            "collectingDecodingInfoEnabled": {
+                              "type": "boolean"
+                            },
+                            "configName": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "dash": {
+                              "type": "object",
+                              "properties": {
+                                "ignoreNetworkErrorsOnLoadInit": {
+                                  "type": "boolean"
+                                },
+                                "qualityLimitsOnStall": {
+                                  "type": "object",
+                                  "properties": {
+                                    "resetQualityRestrictionTimeout": {
+                                      "type": "number"
+                                    },
+                                    "stallCountBeforeQualityDecrease": {
+                                      "type": "number"
+                                    },
+                                    "stallDurationNoDataBeforeQualityDecrease": {
+                                      "type": "number"
+                                    }
+                                  }
+                                },
+                                "rejectOnSourceOpenTimeout": {
+                                  "type": "boolean"
+                                },
+                                "sourceOpenTimeout": {
+                                  "type": "number"
+                                },
+                                "useNewAbr": {
+                                  "type": "boolean"
+                                }
+                              }
+                            },
+                            "devNullLogEnabled": {
+                              "type": "boolean"
+                            },
+                            "keepVideoElement": {
+                              "type": "boolean"
+                            },
+                            "maxPlaybackTransitionInterval": {
+                              "type": "number"
+                            },
+                            "preferHDR": {
+                              "type": "boolean"
+                            },
+                            "preferMultiStream": {
+                              "type": "boolean"
+                            },
+                            "stallsManager": {
+                              "type": "object",
+                              "properties": {
+                                "enabled": {
+                                  "type": "boolean"
+                                }
+                              }
+                            },
+                            "useHlsJs": {
+                              "type": "boolean"
+                            },
+                            "useManagedMediaSource": {
+                              "type": "boolean"
+                            },
+                            "useNewAutoSelectVideoTrack": {
+                              "type": "boolean"
+                            },
+                            "useSafariEndlessRequestBugfix": {
+                              "type": "boolean"
+                            },
+                            "webmCodec": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "meta": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "statistics": {
+                          "type": "object",
+                          "properties": {
+                            "apiEnv": {
+                              "type": "string"
+                            },
+                            "embedUrlParams": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "watchCoverageInterval": {
+                              "type": "number"
+                            },
+                            "watchCoverageTimeoutFix": {
+                              "type": "boolean"
+                            }
+                          }
+                        },
+                        "ui": {
+                          "type": "object",
+                          "properties": {
+                            "ads": {
+                              "type": "object",
+                              "properties": {
+                                "isVsidOriginal": {
+                                  "type": "boolean"
+                                }
+                              }
+                            },
+                            "configName": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "devNullLog": {
+                              "type": "boolean"
+                            },
+                            "disablePiPResizeHandling": {
+                              "type": "boolean"
+                            },
+                            "downloadVKLanguages": {
+                              "type": "boolean"
+                            },
+                            "episodeMinWidthPc": {
+                              "type": "number"
+                            },
+                            "features": {
+                              "type": "object",
+                              "properties": {
+                                "additionalButtons": {
+                                  "type": "boolean"
+                                },
+                                "annotations": {
+                                  "type": "boolean"
+                                },
+                                "annotationsInside": {
+                                  "type": "boolean"
+                                },
+                                "audioLanguages": {
+                                  "type": "boolean"
+                                },
+                                "disableThumbUnstartedOnAutoplay": {
+                                  "type": "boolean"
+                                },
+                                "dpip": {
+                                  "type": "boolean"
+                                },
+                                "endScreen": {
+                                  "type": "boolean"
+                                },
+                                "episodesClustering": {
+                                  "type": "boolean"
+                                },
+                                "forceAutoQualityWhenSevereStallHappens": {
+                                  "type": "boolean"
+                                },
+                                "forcePlayerDisplayBlock": {
+                                  "type": "boolean"
+                                },
+                                "fullscreenInternalTargetPlayerContainer": {
+                                  "type": "boolean"
+                                },
+                                "interactiveAreaControlShadow": {
+                                  "type": "boolean"
+                                },
+                                "interactiveControlsExpectTimeBlinkAnimation": {
+                                  "type": "boolean"
+                                },
+                                "interactiveControlsFillAnimation": {
+                                  "type": "boolean"
+                                },
+                                "interactiveControlsHideAnimation": {
+                                  "type": "boolean"
+                                },
+                                "interactiveControlsTapPlace": {
+                                  "type": "boolean"
+                                },
+                                "interactiveGraph": {
+                                  "type": "boolean"
+                                },
+                                "interactiveHistoryEndChapterFix": {
+                                  "type": "boolean"
+                                },
+                                "interactiveLastFrame": {
+                                  "type": "boolean"
+                                },
+                                "interactiveTimeIndicator": {
+                                  "type": "boolean"
+                                },
+                                "interactiveTimeOpenUri": {
+                                  "type": "boolean"
+                                },
+                                "maxCountShowSlowVideoNotification": {
+                                  "type": "number"
+                                },
+                                "mediaSession": {
+                                  "type": "string"
+                                },
+                                "mobileVkLogoViewOnBottomControls": {
+                                  "type": "boolean"
+                                },
+                                "playbackStatusAnimationDuration": {
+                                  "type": "number"
+                                },
+                                "playbackStatusNextVideoAnimationDuration": {
+                                  "type": "number"
+                                },
+                                "playbackStatusNextVideoShow": {
+                                  "type": "boolean"
+                                },
+                                "playbackStatusShow": {
+                                  "type": "boolean"
+                                },
+                                "qualityDetailsSubMenuEnabled": {
+                                  "type": "boolean"
+                                },
+                                "savePreferredStatesOnUserActionOnly": {
+                                  "type": "boolean"
+                                },
+                                "saveRate": {
+                                  "type": "boolean"
+                                },
+                                "sentry": {
+                                  "type": "boolean"
+                                },
+                                "showSlowVideoNotification": {
+                                  "type": "boolean"
+                                },
+                                "thinStatistics": {
+                                  "type": "boolean"
+                                },
+                                "thumbTimer": {
+                                  "type": "boolean"
+                                },
+                                "timeoutShowSlowVideoNotification": {
+                                  "type": "number"
+                                },
+                                "userVideoPrefs": {
+                                  "type": "boolean"
+                                }
+                              }
+                            },
+                            "hideThumbTimerAfterTouch": {
+                              "type": "boolean"
+                            },
+                            "sentry": {
+                              "type": "object",
+                              "properties": {
+                                "sampleRate": {
+                                  "type": "number"
+                                }
+                              }
+                            },
+                            "updateBuiltinLanguages": {
+                              "type": "boolean"
+                            },
+                            "view": {
+                              "type": "object",
+                              "properties": {
+                                "timelineSliderFilledColor": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "media",
+          "category": "download",
+          "source_url": "/method/video.getPlayerConfig",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/:id/8e/d4b28cc0b905374f.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/:id/8e/d4b28cc0b905374f.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/:id/8e/d4b28cc0b905374f.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/:id/c0/ca37933876686dcd.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/:id/c0/ca37933876686dcd.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/:id/c0/ca37933876686dcd.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/b6/:id/93a837dc06183017.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/b6/:id/93a837dc06183017.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/b6/:id/93a837dc06183017.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/cf/aa/a8655ac54f10b068.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/cf/aa/a8655ac54f10b068.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/cf/aa/a8655ac54f10b068.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/cf/e5/32db22916648f14d.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/cf/e5/32db22916648f14d.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/cf/e5/32db22916648f14d.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/df/:id/6fb16c27a25e2c38.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/df/:id/6fb16c27a25e2c38.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/df/:id/6fb16c27a25e2c38.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/ee/:id/84ed4e4a5ae73316.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/ee/:id/84ed4e4a5ae73316.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "/imgs/ee/:id/84ed4e4a5ae73316.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/{id1}/c0/ca37933876686dcd.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/37/c0/ca37933876686dcd.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 68%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "37",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "https://r.mradx.net/imgs/37/c0/ca37933876686dcd.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/{id1}/8e/d4b28cc0b905374f.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/63/8e/d4b28cc0b905374f.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 68%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "63",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "https://r.mradx.net/imgs/63/8e/d4b28cc0b905374f.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/b6/{id1}/93a837dc06183017.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/b6/09/93a837dc06183017.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 68%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "09",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "https://r.mradx.net/imgs/b6/09/93a837dc06183017.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/df/{id1}/6fb16c27a25e2c38.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/df/92/6fb16c27a25e2c38.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 68%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "92",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "https://r.mradx.net/imgs/df/92/6fb16c27a25e2c38.svg",
+          "draft": true
+        }
+      }
+    },
+    "/imgs/ee/{id1}/84ed4e4a5ae73316.svg": {
+      "get": {
+        "tags": [
+          "Media"
+        ],
+        "summary": "GET /imgs/ee/63/84ed4e4a5ae73316.svg",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 68%.",
+        "consumes": [
+          "image/*"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "63",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "media",
+          "category": "media",
+          "source_url": "https://r.mradx.net/imgs/ee/63/84ed4e4a5ae73316.svg",
+          "draft": true
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "GET /",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 95%.",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "appId",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "bytes",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ch",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "clientType",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ct",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "expires",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "fromCache",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ms",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "pr",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sig",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "srcAg",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "srcIp",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "urls",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.9500000000000001,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/",
+          "draft": true
+        }
+      }
+    },
+    "/fb.do": {
+      "post": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "POST /fb.do",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: cookie/session. Confidence: 87%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "activated_profile": {
+                  "type": "boolean"
+                },
+                "api_server": {
+                  "type": "string"
+                },
+                "session_key": {
+                  "type": "string"
+                },
+                "session_secret_key": {
+                  "type": "string"
+                },
+                "uid": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.87,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/fb.do",
+          "draft": true
+        }
+      }
+    },
+    "/images/gift/:id/animation.json": {
+      "get": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "GET /images/gift/:id/animation.json",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 83%.",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "assets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ddd": {
+                  "type": "number"
+                },
+                "fr": {
+                  "type": "number"
+                },
+                "h": {
+                  "type": "number"
+                },
+                "ip": {
+                  "type": "number"
+                },
+                "layers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ao": {
+                        "type": "number"
+                      },
+                      "bm": {
+                        "type": "number"
+                      },
+                      "ct": {
+                        "type": "number"
+                      },
+                      "ddd": {
+                        "type": "number"
+                      },
+                      "ind": {
+                        "type": "number"
+                      },
+                      "ip": {
+                        "type": "number"
+                      },
+                      "ks": {
+                        "type": "object",
+                        "properties": {
+                          "a": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "o": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "p": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "i": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "o": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "s": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "t": {
+                                      "type": "number"
+                                    },
+                                    "ti": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "to": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "r": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "i": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        },
+                                        "y": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "o": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        },
+                                        "y": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "s": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "t": {
+                                      "type": "number"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "s": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "op": {
+                        "type": "number"
+                      },
+                      "parent": {
+                        "type": "number"
+                      },
+                      "shapes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "bm": {
+                              "type": "number"
+                            },
+                            "it": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "ind": {
+                                    "type": "number"
+                                  },
+                                  "ks": {
+                                    "type": "object",
+                                    "properties": {
+                                      "a": {
+                                        "type": "number"
+                                      },
+                                      "k": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "i": {
+                                              "type": "object",
+                                              "properties": {
+                                                "x": {
+                                                  "type": "number"
+                                                },
+                                                "y": {
+                                                  "type": "number"
+                                                }
+                                              }
+                                            },
+                                            "o": {
+                                              "type": "object",
+                                              "properties": {
+                                                "x": {
+                                                  "type": "number"
+                                                },
+                                                "y": {
+                                                  "type": "number"
+                                                }
+                                              }
+                                            },
+                                            "s": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "c": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "i": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  },
+                                                  "o": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  },
+                                                  "v": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "t": {
+                                              "type": "number"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ty": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "ty": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "sr": {
+                        "type": "number"
+                      },
+                      "st": {
+                        "type": "number"
+                      },
+                      "ty": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                },
+                "markers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "op": {
+                  "type": "number"
+                },
+                "props": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "v": {
+                  "type": "string"
+                },
+                "w": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/images/gift/:id/animation.json",
+          "draft": true
+        }
+      }
+    },
+    "/method/photos.getAlbums": {
+      "post": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "POST /method/photos.getAlbums",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 83%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "number"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "can_delete": {
+                            "type": "boolean"
+                          },
+                          "can_include_to_feed": {
+                            "type": "boolean"
+                          },
+                          "feed_disabled": {
+                            "type": "number"
+                          },
+                          "feed_has_pinned": {
+                            "type": "number"
+                          },
+                          "id": {
+                            "type": "number"
+                          },
+                          "is_locked": {
+                            "type": "boolean"
+                          },
+                          "owner_id": {
+                            "type": "number"
+                          },
+                          "privacy_view": {
+                            "type": "object",
+                            "properties": {
+                              "category": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "sizes": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "height": {
+                                  "type": "number"
+                                },
+                                "src": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                },
+                                "width": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          },
+                          "thumb_id": {
+                            "type": "number"
+                          },
+                          "title": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/method/photos.getAlbums",
+          "draft": true
+        }
+      }
+    },
+    "/method/video.feedVideosForYouBlockItems": {
+      "post": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "POST /method/video.feedVideosForYouBlockItems",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 82%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "object",
+                  "properties": {
+                    "button": {
+                      "type": "object",
+                      "properties": {
+                        "action": {
+                          "type": "object",
+                          "properties": {
+                            "target": {
+                              "type": "string"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "title": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "date": {
+                      "type": "number"
+                    },
+                    "groups": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number"
+                          },
+                          "is_admin": {
+                            "type": "number"
+                          },
+                          "is_advertiser": {
+                            "type": "number"
+                          },
+                          "is_closed": {
+                            "type": "number"
+                          },
+                          "is_member": {
+                            "type": "number"
+                          },
+                          "members_count": {
+                            "type": "number"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "photo_100": {
+                            "type": "string"
+                          },
+                          "photo_200": {
+                            "type": "string"
+                          },
+                          "photo_50": {
+                            "type": "string"
+                          },
+                          "photo_base": {
+                            "type": "string"
+                          },
+                          "screen_name": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "verified": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "action_button": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "snippet": {
+                                "type": "object",
+                                "properties": {
+                                  "description": {
+                                    "type": "string"
+                                  },
+                                  "image": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "height": {
+                                          "type": "number"
+                                        },
+                                        "url": {
+                                          "type": "string"
+                                        },
+                                        "width": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "open_title": {
+                                    "type": "string"
+                                  },
+                                  "title": {
+                                    "type": "string"
+                                  },
+                                  "type_name": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "url": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "added": {
+                            "type": "number"
+                          },
+                          "ads": {
+                            "type": "object",
+                            "properties": {
+                              "autoplay_preroll": {
+                                "type": "number"
+                              },
+                              "can_play": {
+                                "type": "number"
+                              },
+                              "midroll_percents": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                }
+                              },
+                              "params": {
+                                "type": "object",
+                                "properties": {
+                                  "_SITEID": {
+                                    "type": "number"
+                                  },
+                                  "ad_nav_screen": {
+                                    "type": "string"
+                                  },
+                                  "child_mode": {
+                                    "type": "boolean"
+                                  },
+                                  "child_profile": {
+                                    "type": "boolean"
+                                  },
+                                  "duration": {
+                                    "type": "number"
+                                  },
+                                  "groupId": {
+                                    "type": "number"
+                                  },
+                                  "is_xz_video": {
+                                    "type": "number"
+                                  },
+                                  "lang": {
+                                    "type": "number"
+                                  },
+                                  "sign": {
+                                    "type": "string"
+                                  },
+                                  "video_id": {
+                                    "type": "string"
+                                  },
+                                  "vk_catid": {
+                                    "type": "number"
+                                  },
+                                  "vk_content_mark_ids": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "vk_id": {
+                                    "type": "number"
+                                  }
+                                }
+                              },
+                              "sections": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              },
+                              "slot_id": {
+                                "type": "number"
+                              },
+                              "timeout": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "can_add": {
+                            "type": "number"
+                          },
+                          "can_add_to_faves": {
+                            "type": "number"
+                          },
+                          "can_comment": {
+                            "type": "number"
+                          },
+                          "can_dislike": {
+                            "type": "number"
+                          },
+                          "can_download": {
+                            "type": "number"
+                          },
+                          "can_like": {
+                            "type": "number"
+                          },
+                          "can_play_in_background": {
+                            "type": "number"
+                          },
+                          "can_repost": {
+                            "type": "number"
+                          },
+                          "can_subscribe": {
+                            "type": "number"
+                          },
+                          "comments": {
+                            "type": "number"
+                          },
+                          "date": {
+                            "type": "number"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "direct_url": {
+                            "type": "string"
+                          },
+                          "download": {
+                            "type": "object",
+                            "properties": {
+                              "can_download_for_offline_view": {
+                                "type": "boolean"
+                              },
+                              "can_download_to_device": {
+                                "type": "boolean"
+                              },
+                              "unavailable_for_offline_view": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "duration": {
+                            "type": "number"
+                          },
+                          "files": {
+                            "type": "object",
+                            "properties": {
+                              "dash_sep": {
+                                "type": "string"
+                              },
+                              "failover_host": {
+                                "type": "string"
+                              },
+                              "hls": {
+                                "type": "string"
+                              },
+                              "hls_fmp4": {
+                                "type": "string"
+                              },
+                              "mp4_144": {
+                                "type": "string"
+                              },
+                              "mp4_240": {
+                                "type": "string"
+                              },
+                              "mp4_360": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "first_frame": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "height": {
+                                  "type": "number"
+                                },
+                                "url": {
+                                  "type": "string"
+                                },
+                                "width": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          },
+                          "has_subtitles": {
+                            "type": "number"
+                          },
+                          "height": {
+                            "type": "number"
+                          },
+                          "id": {
+                            "type": "number"
+                          },
+                          "image": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "height": {
+                                  "type": "number"
+                                },
+                                "url": {
+                                  "type": "string"
+                                },
+                                "width": {
+                                  "type": "number"
+                                },
+                                "with_padding": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          },
+                          "is_favorite": {
+                            "type": "boolean"
+                          },
+                          "likes": {
+                            "type": "object",
+                            "properties": {
+                              "count": {
+                                "type": "number"
+                              },
+                              "user_likes": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "local_views": {
+                            "type": "number"
+                          },
+                          "need_mediascope_stat": {
+                            "type": "boolean"
+                          },
+                          "ov_id": {
+                            "type": "string"
+                          },
+                          "owner_id": {
+                            "type": "number"
+                          },
+                          "player": {
+                            "type": "string"
+                          },
+                          "reposts": {
+                            "type": "object",
+                            "properties": {
+                              "count": {
+                                "type": "number"
+                              },
+                              "user_reposted": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "response_type": {
+                            "type": "string"
+                          },
+                          "share_url": {
+                            "type": "string"
+                          },
+                          "stats_pixels": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "event": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "subtitles": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "is_auto": {
+                                  "type": "boolean"
+                                },
+                                "lang": {
+                                  "type": "string"
+                                },
+                                "manifest_name": {
+                                  "type": "string"
+                                },
+                                "storage_index": {
+                                  "type": "number"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "url": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "target": {
+                            "type": "string"
+                          },
+                          "timeline_thumbs": {
+                            "type": "object",
+                            "properties": {
+                              "count_per_image": {
+                                "type": "number"
+                              },
+                              "count_per_row": {
+                                "type": "number"
+                              },
+                              "count_total": {
+                                "type": "number"
+                              },
+                              "frame_height": {
+                                "type": "number"
+                              },
+                              "frame_width": {
+                                "type": "number"
+                              },
+                              "frequency": {
+                                "type": "number"
+                              },
+                              "is_uv": {
+                                "type": "boolean"
+                              },
+                              "links": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "track_code": {
+                            "type": "string"
+                          },
+                          "tracking_info": {
+                            "type": "object",
+                            "properties": {
+                              "navigation": {
+                                "type": "object",
+                                "properties": {
+                                  "source_block": {
+                                    "type": "string"
+                                  },
+                                  "source_prev_screen": {
+                                    "type": "string"
+                                  },
+                                  "source_screen": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "recom_info": {
+                                "type": "object",
+                                "properties": {
+                                  "feature_sampling_uuid": {
+                                    "type": "string"
+                                  },
+                                  "recom_sources": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "number"
+                                    }
+                                  }
+                                }
+                              },
+                              "search_info": {
+                                "type": "object",
+                                "properties": {
+                                  "search_iid": {
+                                    "type": "number"
+                                  },
+                                  "search_query_id": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "trailer": {
+                            "type": "object",
+                            "properties": {
+                              "mp4_240": {
+                                "type": "string"
+                              },
+                              "mp4_360": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "viewed_duration": {
+                            "type": "number"
+                          },
+                          "views": {
+                            "type": "number"
+                          },
+                          "wall_post_id": {
+                            "type": "number"
+                          },
+                          "width": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "source_id": {
+                      "type": "number"
+                    },
+                    "title": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/method/video.feedVideosForYouBlockItems",
+          "draft": true
+        }
+      }
+    },
+    "/video.php": {
+      "post": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "POST /video.php",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: cookie/session. Confidence: 91%.",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "act",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "langVersion": {
+                  "type": "string"
+                },
+                "loaderVersion": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "statsMeta": {
+                  "type": "object",
+                  "properties": {
+                    "hash": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "number"
+                    },
+                    "platform": {
+                      "type": "string"
+                    },
+                    "reloadVersion": {
+                      "type": "number"
+                    },
+                    "st": {
+                      "type": "boolean"
+                    },
+                    "time": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "vkEnv": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.91,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "/video.php",
+          "draft": true
+        }
+      }
+    },
+    "/images/gift/{id1}/animation.json": {
+      "get": {
+        "tags": [
+          "Other",
+          "Media"
+        ],
+        "summary": "GET /images/gift/1980/animation.json",
+        "description": "Swagger 2.0 compatibility draft. Auth hint: none observed. Confidence: 82%.",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "1980",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "assets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ddd": {
+                  "type": "number"
+                },
+                "fr": {
+                  "type": "number"
+                },
+                "h": {
+                  "type": "number"
+                },
+                "ip": {
+                  "type": "number"
+                },
+                "layers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ao": {
+                        "type": "number"
+                      },
+                      "bm": {
+                        "type": "number"
+                      },
+                      "ct": {
+                        "type": "number"
+                      },
+                      "ddd": {
+                        "type": "number"
+                      },
+                      "ind": {
+                        "type": "number"
+                      },
+                      "ip": {
+                        "type": "number"
+                      },
+                      "ks": {
+                        "type": "object",
+                        "properties": {
+                          "a": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "o": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "p": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "i": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "o": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        }
+                                      }
+                                    },
+                                    "s": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "t": {
+                                      "type": "number"
+                                    },
+                                    "ti": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "to": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "r": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "i": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        },
+                                        "y": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "o": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        },
+                                        "y": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "s": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "number"
+                                      }
+                                    },
+                                    "t": {
+                                      "type": "number"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "s": {
+                            "type": "object",
+                            "properties": {
+                              "a": {
+                                "type": "number"
+                              },
+                              "k": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                }
+                              },
+                              "l": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "op": {
+                        "type": "number"
+                      },
+                      "parent": {
+                        "type": "number"
+                      },
+                      "shapes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "bm": {
+                              "type": "number"
+                            },
+                            "it": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "ind": {
+                                    "type": "number"
+                                  },
+                                  "ks": {
+                                    "type": "object",
+                                    "properties": {
+                                      "a": {
+                                        "type": "number"
+                                      },
+                                      "k": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "i": {
+                                              "type": "object",
+                                              "properties": {
+                                                "x": {
+                                                  "type": "number"
+                                                },
+                                                "y": {
+                                                  "type": "number"
+                                                }
+                                              }
+                                            },
+                                            "o": {
+                                              "type": "object",
+                                              "properties": {
+                                                "x": {
+                                                  "type": "number"
+                                                },
+                                                "y": {
+                                                  "type": "number"
+                                                }
+                                              }
+                                            },
+                                            "s": {
+                                              "type": "array",
+                                              "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                  "c": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "i": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  },
+                                                  "o": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  },
+                                                  "v": {
+                                                    "type": "array",
+                                                    "items": {
+                                                      "type": "array",
+                                                      "items": {
+                                                        "type": "number"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "t": {
+                                              "type": "number"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ty": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "ty": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "sr": {
+                        "type": "number"
+                      },
+                      "st": {
+                        "type": "number"
+                      },
+                      "ty": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                },
+                "markers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "op": {
+                  "type": "number"
+                },
+                "props": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "v": {
+                  "type": "string"
+                },
+                "w": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-sitereconstructor": {
+          "confidence": 0.82,
+          "server_kind": "media",
+          "category": "other",
+          "source_url": "https://vk.com/images/gift/1980/animation.json",
+          "draft": true
+        }
+      }
+    }
+  }
+}

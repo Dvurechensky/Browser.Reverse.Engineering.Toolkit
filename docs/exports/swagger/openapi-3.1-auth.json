@@ -1,0 +1,208 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "SiteReconstructor Auth API",
+    "version": "0.1.0",
+    "description": "Generated from authorized passive website capture evidence. Schemas are inferred drafts until validated."
+  },
+  "servers": [
+    {
+      "url": "https://api.vk.com",
+      "description": "auth"
+    },
+    {
+      "url": "https://sdk-api.apptracer.ru",
+      "description": "auth"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "paths": {
+    "/method/video.getStatsToken": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "POST /method/video.getStatsToken",
+        "description": "Inferred from passive capture. Auth hint: auth likely. Confidence: 83%.",
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "v",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer {{access_token}}"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "type": "object",
+                      "properties": {
+                        "token": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "response": {
+                    "token": "str...[masked]"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.83,
+          "server_kind": "auth",
+          "category": "auth",
+          "auth_hint": "auth likely",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/method/video.getStatsToken"
+        }
+      }
+    },
+    "/api/crash/uploadBatch": {
+      "post": {
+        "tags": [
+          "Upload",
+          "Auth"
+        ],
+        "summary": "POST /api/crash/uploadBatch",
+        "description": "Inferred from passive capture. Auth hint: auth likely. Confidence: 68%.",
+        "parameters": [
+          {
+            "name": "compressType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "crashToken",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sdkVersion",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Bearer {{access_token}}"
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/octet-stream": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              },
+              "example": {}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Captured or inferred response shape",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "example": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "x-sitereconstructor": {
+          "confidence": 0.68,
+          "server_kind": "auth",
+          "category": "upload",
+          "auth_hint": "auth likely",
+          "observed_status_codes": [
+            200
+          ],
+          "inferred_schema": true,
+          "draft": true,
+          "source_url": "/api/crash/uploadBatch"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rules": [
+    {
+      "id": "public_sourcemap",
+      "title": "Public source map detected",
+      "severity": "medium",
+      "confidence": 0.7,
+      "match": {
+        "file": "source_maps.json",
+        "path": "present",
+        "equals": true
+      },
+      "recommendation": "Disable public source maps in production or restrict access."
+    },
+    {
+      "id": "missing_csp",
+      "title": "No CSP signal captured",
+      "severity": "medium",
+      "confidence": 0.6,
+      "match": {
+        "file": "security.json",
+        "path": "csp.present",
+        "equals": false
+      },
+      "recommendation": "Define a restrictive Content-Security-Policy for production pages."
+    },
+    {
+      "id": "debug_mode",
+      "title": "Debug mode signal captured",
+      "severity": "low",
+      "confidence": 0.55,
+      "match": {
+        "file": "jsenv.json",
+        "path": "debug",
+        "equals": true
+      },
+      "recommendation": "Disable debug mode and public debug globals in production."
+    }
+  ]
+}

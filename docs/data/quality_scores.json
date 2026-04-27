@@ -1,0 +1,7 @@
+{
+  "swagger_accuracy": "83%",
+  "postman_accuracy": "81%",
+  "module_inference": "65%",
+  "entity_graph": "66%",
+  "topology_detection": "85%"
+}
